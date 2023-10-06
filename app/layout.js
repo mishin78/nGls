@@ -5,7 +5,7 @@ import Navigation from './navigation'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Nationale Deutschsprachige Schule',
+  title: 'beta(v-0.01)',
   description: 'Nationale Deutschsprachige Schule',
 }
 

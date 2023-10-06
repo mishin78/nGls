@@ -14,6 +14,9 @@ export default function Navigation() {
     const [ showWriting, setShowWriting ] = useState(false)
     const [ showExams, setShowExams ] = useState(false)
 
+    const home = () => {
+        setShowGrammar(false); setShowVocabulary(false); setShowListening(false); setShowReading(false); setShowEveryday(false); setShowWriting(false); setShowExams(false);
+    }
     const grammar = () => {
         setShowGrammar(true); setShowVocabulary(false); setShowListening(false); setShowReading(false); setShowEveryday(false); setShowWriting(false); setShowExams(false);
     }
@@ -39,7 +42,7 @@ export default function Navigation() {
     return (
         <nav>
             <Link href='/'>
-                <div className='logoBox'>
+                <div onClick={() => home()} className='logoBox'>
                     <Image className='logo' alt='flag of Germany' src='/german.png' width={25} height={25}/>
                     <h6>Nationale Deutschsprachige Schule</h6>
                 </div>
