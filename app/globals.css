@@ -18,3 +18,12 @@ body {
   overflow-x: hidden;
 }
 
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}

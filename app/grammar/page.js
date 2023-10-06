@@ -4,6 +4,6 @@
 export default function Grammar() {
 
     return (
-        <h1>Evererithink working</h1>
+        <h1>Grammar</h1>
     )
 }

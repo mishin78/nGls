@@ -5,3 +5,63 @@ $pink: #FF0080
 $mustard: #F5A622
 $lightgreen: #4FE3C2
 $violet: #7928C9
+
+%flex-column
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+
+%flex
+    display: flex
+    justify-content: center
+    align-items: center
+
+
+aside
+    position: fixed
+    width: 400px
+    left: 0%
+    top: 0%
+    border: 1px solid $pink
+    padding: 1rem
+    @extend %flex-column
+    align-items: flex-start
+    flex-shrink: 0
+    gap: 2rem
+    .logoBox
+        @extend %flex
+        gap: 1rem
+        .logo:hover
+            animation: logo 0.5s linear
+        h6
+            font-size: 1rem
+    ul
+        @extend %flex-column
+        gap: 1rem
+        width: 100%
+        ul
+            @extend  %flex-column
+            justify-content: flex-end
+            padding-left: 2rem
+            width: 200px
+            li
+                list-style: none
+                font-size: 0.9rem
+                align-self: flex-start
+        .section
+            @extend %flex
+            h6
+                font-size: 1rem
+                
+                
+                    
+           
+
+
+@keyframes logo
+    0%
+        transform: rotate(0deg)
+    100%
+        transform: rotate(360deg)
+        
