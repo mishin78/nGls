@@ -1,6 +1,6 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
-import SideBar from './sideBar'
+import Navigation from './navigation'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
         <link rel='icon' href='/german.png'/>
       </head>
       <body className={inter.className}>
-        <SideBar />
+        <Navigation />
         {children}
       </body>
     </html>

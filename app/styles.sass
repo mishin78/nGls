@@ -5,6 +5,8 @@ $pink: #FF0080
 $mustard: #F5A622
 $lightgreen: #4FE3C2
 $violet: #7928C9
+$grey: #EAEAEA
+$black: #030303
 
 %flex-column
     display: flex
@@ -17,13 +19,51 @@ $violet: #7928C9
     justify-content: center
     align-items: center
 
+@keyframes logo
+    0%
+        transform: rotate(0deg)
+    100%
+        transform: rotate(360deg)
+
+body
+    @extend %flex-column
+    gap: 2rem
+
+
+nav
+    @extend %flex
+    justify-content: space-between
+    width: 100%
+    padding: 2rem
+    border: 0.5px solid $grey
+    background: white
+    .logoBox
+        @extend %flex
+        gap: 1rem
+        h6
+          font-size: 1rem
+          color: $black
+    .sectionsBox
+        @extend %flex
+        gap: 2rem
+        padding-right: 4rem
+        .section
+            @extend %flex
+            h6
+                font-size: 1rem
+                color: #666666
+                font-weight: 400
+            h6:hover
+                color: $black
+    
+
 
 aside
     position: fixed
     width: 400px
     left: 0%
     top: 0%
-    border: 1px solid $pink
+    border: 1px dashed $pink
     padding: 1rem
     @extend %flex-column
     align-items: flex-start
@@ -36,6 +76,7 @@ aside
             animation: logo 0.5s linear
         h6
             font-size: 1rem
+            color: $blue
     ul
         @extend %flex-column
         gap: 1rem
@@ -49,19 +90,17 @@ aside
                 list-style: none
                 font-size: 0.9rem
                 align-self: flex-start
+                color: $blue
         .section
             @extend %flex
             h6
                 font-size: 1rem
+                color: $blue
                 
                 
                     
            
 
 
-@keyframes logo
-    0%
-        transform: rotate(0deg)
-    100%
-        transform: rotate(360deg)
+
         
