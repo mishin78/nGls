@@ -7,6 +7,14 @@ $lightgreen: #4FE3C2
 $violet: #7928C9
 $grey: #EAEAEA
 $black: #030303
+$rolex-green: #01613A
+$rolex-gold: #A37F2D
+$mc-red: #DA291C
+$mc-yellow: #FFC72C
+$mc-black: #27251F
+$cola-red: #F40009
+
+
 
 %flex-column
     display: flex
@@ -25,6 +33,19 @@ $black: #030303
     100%
         transform: rotate(360deg)
 
+@keyframes logoMove
+    0%
+        transform: rotate(0deg)
+    25%
+        transform: rotate(5deg)
+    50%
+        transform: rotate(0deg)
+    75%
+        transform: rotate(-5deg)
+    100%
+        transform: rotate(0deg)
+        
+
 body
     @extend %flex-column
     
@@ -39,15 +60,13 @@ nav
     background: white
     .logoBox
         @extend %flex
-        gap: 1rem
+        gap: 0.5rem
         .logo:hover
             animation: logo 0.5s linear
         h6
           font-size: 1rem
-          color: #121212
+          color: #23272F
           font-weight: 400
-        h6:hover
-            color: $black
     .sectionsBox
         @extend %flex
         gap: 2rem
@@ -91,7 +110,6 @@ main
             padding: 3rem
             height: 150px
             border-radius: 8px
-            background-image: url(/back.svg)
             border: 1px solid black
             position: relative
             h5
@@ -104,30 +122,63 @@ main
                 height: 100%
                 background-color: rgba(255,0,0,0.6)
         .writing
-            background-image: repeating-linear-gradient(#FFD400 0px, #FFD400 24px, grey 25px)
+            @extend %flex
+            gap: 1rem
+            justify-content: flex-end
+            background-image: repeating-linear-gradient(white 0px, white 24px, teal 25px)
             h5
                 color: $black
-            .line
-                display: none
+                font-style: italic
+                font-weight: 600
+        .writing:hover
+            img
+                animation: logoMove 0.2s ease-in-out
+                animation-iteration-count: 2
         .grammar
-            background-image: repeating-linear-gradient(white 0px, white 24px, teal 25px)
+            background: $blue
+            transition: 0.1s ease-in
+            border: none
+            span
+                color: $bread-color
+            h5
+                color: $smoke-white
+        .grammar:hover
+            background: $smoke-white
+            border: 1px solid $black
+            h5
+                color: $blue
+        .listening
+            display: flex
+            gap: 1rem
+            transition: 0.1s ease-in
+            background: #23272F
+            h5
+                color: #F9F7F6
+        .listening:hover
+            img
+                animation: logoMove 0.2s ease-in-out
+                animation-iteration-count: 2
+        .reading
+            background: $rolex-green
+            gap: 1rem
+            h5
+                color: white
+        .reading:hover
+            background: #02673f
+        .everyday
+            background: $mc-red
+            h5
+                color: white
+            span
+                color: $mc-yellow
+        .vocabulary
+            h5
+                color: $cola-red
+
 
 
         
 
-
-main::after
-    content: ''
-    width: 2px
-    height: 100%
-    position: fixed
-    top: 0
-    right: 40px
-    background-color: rgba(255,0,0,0.6)
-
-
-                  
-           
 
 
 

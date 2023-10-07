@@ -1,8 +1,9 @@
-
+import '../styles.sass'
 
 export default function Everyday() {
 
     return (
+        <main>
         <div>
             <p>
             How are you? I’m fine. I’m at home, of course, because of lockdown. I started my engineering course at Manchester University last year, but I’m not there now. I went to Manchester in October and I stayed in the student accommodation. We had lectures in the lecture rooms for three weeks, but after that, we had to stay in our accommodation because of Covid-19. I studied by computer. I wanted to go out to bars and join a basketball team, but I couldn’t. Luckily, there were some cool students in my accommodation. I made some good friends and we had cool parties.
@@ -12,5 +13,6 @@ But now I’m at home. I’m still studying by computer. I have four hours of le
 I miss playing basketball, but I’m keeping active. I go jogging once a day. But I’m watching a lot of videos too.
             </p>
         </div>
+        </main>
     )
 }

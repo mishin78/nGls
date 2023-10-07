@@ -52,43 +52,36 @@ export default function Navigation() {
             <Link href='/grammar'>
                 <div className='section' onClick={() => grammar()}>
                     {showGrammar ? <h6 style={{color: '#0070F3'}}>Grammar</h6> : <h6>Grammar</h6>}
-                    {showGrammar ? <Image alt='arrow down' width={20} height={20} src='/arrowDown.svg' /> : <Image alt='arrow right' width={20} height={20} src='/arrowRight.svg' />}
                 </div>
             </Link>
             <Link href='/vocabulary'>
                 <div className='section' onClick={() => vocabulary()}>
                     {showVocabulary ? <h6 style={{color: '#0070F3'}}>Vocabulary</h6> : <h6>Vocabulary</h6>}
-                    {showVocabulary ? <Image alt='arrow down' width={20} height={20} src='/arrowDown.svg' /> : <Image alt='arrow right' width={20} height={20} src='/arrowRight.svg' />}
                 </div>
             </Link>
             <Link href='/listening'>
                 <div className='section' onClick={() => listening()}>
                     {showListening ? <h6 style={{color: '#0070F3'}}>Listening</h6> : <h6>Listening</h6>}
-                    {showListening ? <Image alt='arrow down' width={20} height={20} src='/arrowDown.svg' /> : <Image alt='arrow right' width={20} height={20} src='/arrowRight.svg' />}
                 </div>
             </Link>
             <Link href='/reading'>
                 <div className='section' onClick={() => reading()}>
                     {showReading ? <h6 style={{color: '#0070F3'}}>Reading</h6> : <h6>Reading</h6>}
-                    {showReading ? <Image alt='arrow down' width={20} height={20} src='/arrowDown.svg' /> : <Image alt='arrow right' width={20} height={20} src='/arrowRight.svg' />}
                 </div>
             </Link>
             <Link href='/everyday'>
                 <div className='section' onClick={() => everyday()}>
                     {showEveryday ? <h6 style={{color: '#0070F3'}}>Use of English</h6> : <h6>Use of English</h6>}
-                    {showEveryday ? <Image alt='arrow down' width={20} height={20} src='/arrowDown.svg' /> : <Image alt='arrow right' width={20} height={20} src='/arrowRight.svg' />}
                 </div>
             </Link>
             <Link href='/writing'>
                 <div className='section' onClick={() => writing()}>
                     {showWriting ? <h6 style={{color: '#0070F3'}}>Writing</h6> : <h6>Writing</h6>}
-                    {showWriting ? <Image alt='arrow down' width={20} height={20} src='/arrowDown.svg' /> : <Image alt='arrow right' width={20} height={20} src='/arrowRight.svg' />}
                 </div>
             </Link>
             <Link href='/exams'>
                 <div className='section' onClick={() => exams()}>
                     {showExams ? <h6 style={{color: '#0070F3'}}>Exams</h6> : <h6>Exams</h6>}
-                    {showExams ? <Image alt='arrow down' width={20} height={20} src='/arrowDown.svg' /> : <Image alt='arrow right' width={20} height={20} src='/arrowRight.svg' />}
                 </div>
             </Link>
             </div>

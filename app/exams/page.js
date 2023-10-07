@@ -1,8 +1,11 @@
-
+import '../styles.sass'
 
 export default function Exams() {
 
     return (
-        <h1>Exams</h1>
+        <main>
+            <h1>Exams</h1>
+
+        </main>
     )
 }
