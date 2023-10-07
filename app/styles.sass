@@ -86,41 +86,10 @@ main
         align-content: center
         row-gap: 3rem
         column-gap: 2rem
-        .sectionG
-            background-image: repeating-linear-gradient(white 0px, white 24px, teal 25px)
-            @extend %flex
-            padding: 3rem
-            border-radius: 8px
-            border: 1px solid black
-            position: relative
-            h5
-                color: #23272F
-                font-size: 2rem
-            .line
-                position: absolute
-                right: 10%
-                width: 2px
-                height: 100%
-                background-color: rgba(255,0,0,0.6)
-        .sectionW
-            @extend %flex
-            padding: 3rem
-            border-radius: 8px
-            background-image: url(/back.svg)
-            border: 1px solid black
-            position: relative
-            h5
-                color: #23272F
-                font-size: 2rem
-            .line
-                position: absolute
-                right: 10%
-                width: 2px
-                height: 100%
-                background-color: rgba(255,0,0,0.6)
         .section
             @extend %flex
             padding: 3rem
+            height: 150px
             border-radius: 8px
             background-image: url(/back.svg)
             border: 1px solid black
@@ -134,6 +103,14 @@ main
                 width: 2px
                 height: 100%
                 background-color: rgba(255,0,0,0.6)
+        .writing
+            background-image: repeating-linear-gradient(#FFD400 0px, #FFD400 24px, grey 25px)
+            h5
+                color: $black
+            .line
+                display: none
+        .grammar
+            background-image: repeating-linear-gradient(white 0px, white 24px, teal 25px)
 
 
         
