@@ -43,7 +43,7 @@ export default function Navigation() {
         <nav>
             <Link href='/'>
                 <div onClick={() => home()} className='logoBox'>
-                    <Image className='logo' alt='flag of Germany' src='/german.png' width={25} height={25}/>
+                    <Image className='logo' alt='flag of Germany' src='/german-shepherd.png' width={60} height={60}/>
                     <h6>Nationale Deutschsprachige Schule</h6>
                 </div>
             </Link>

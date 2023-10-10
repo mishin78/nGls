@@ -13,3 +13,10 @@ sections:
         intermediate
         upper-intermediate
         pre-advanced
+
+
+TO TRY: basic color but on hover different styles
+
+
+exams  кубок
+coxabulaty  точки соденияющеися

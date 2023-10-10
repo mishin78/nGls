@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg width="800px" height="800px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+<g data-name="06_Tools" id="_06_Tools">
+<path d="M30,62H16a1,1,0,0,1-1-1V3a1,1,0,0,1,1-1H30a1,1,0,0,1,1,1V61A1,1,0,0,1,30,62Z" style="fill:#febc00"/>
+<path d="M30,2H29V46A14,14,0,0,1,15,60h0v1a1,1,0,0,0,1,1H30a1,1,0,0,0,1-1V3A1,1,0,0,0,30,2Z" style="fill:#edaa03"/>
+<rect height="2" style="fill:#f74e0c" width="7" x="15" y="7"/>
+<rect height="2" style="fill:#f74e0c" width="7" x="15" y="13"/>
+<rect height="2" style="fill:#f74e0c" width="7" x="15" y="19"/>
+<rect height="2" style="fill:#f74e0c" width="7" x="15" y="25"/>
+<rect height="2" style="fill:#f74e0c" width="7" x="15" y="31"/>
+<rect height="2" style="fill:#f74e0c" width="7" x="15" y="37"/>
+<rect height="2" style="fill:#f74e0c" width="7" x="15" y="43"/>
+<rect height="2" style="fill:#f74e0c" width="7" x="15" y="49"/>
+<rect height="2" style="fill:#f74e0c" width="7" x="15" y="55"/>
+<rect height="32" style="fill:#f74e0c" width="12" x="33" y="21"/>
+<rect height="32" style="fill:#febc00" width="4" x="37" y="21"/>
+<rect height="6" style="fill:#dfeaef" width="12" x="33" y="15"/>
+<path d="M35,15H33v6H45V19H39A4,4,0,0,1,35,15Z" style="fill:#c3d6dd"/>
+<path d="M39,8h0a6,6,0,0,1,6,6v1a0,0,0,0,1,0,0H33a0,0,0,0,1,0,0V14A6,6,0,0,1,39,8Z" style="fill:#f74e0c"/>
+<path d="M40,8.09A5.967,5.967,0,0,0,33,14v1h2V14A6,6,0,0,1,40,8.09Z" style="fill:#e03a07"/>
+<polygon points="40.39 60 37.61 60 33 53 45 53 40.39 60" style="fill:#f7d694"/>
+<polygon points="40.39 60 39 62 37.61 60 40.39 60" style="fill:#f74e0c"/>
+</g>
+</svg>

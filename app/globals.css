@@ -22,6 +22,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #d5fafe;
+background-image: linear-gradient(69deg, #d5fafe 0%, #ffffff 46%, #eff3ff 100%);
+
+
 }
 
 a {
