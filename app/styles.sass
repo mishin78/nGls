@@ -98,7 +98,7 @@ main
         font-weight: 400
         font-style: italic
         font-size: 3rem
-        color: #23272F
+        color: #4C4744
         span
             color: #0f5fbb
             font-weight: 500
@@ -148,10 +148,172 @@ main
 
 
 
-
+.experiment
+    .levelsBox
+        @extend %flex
+        h3
+            color: #4C4744
+            font-weight: 500
+            background: #FFFFFF
+            padding: 0.4rem 0.8rem
+            border-radius: 8px
+            font-size: 1rem
+            border: 1px solid #e5e7eb
+        h3:hover
+            border: 1px dashed #0070F3
+        span
+            width: 50px
+            font-weight: 200
+            color: tranperent
+            border-bottom: 1px dashed #0070F3
+    .gridBox
+          display: grid
+          grid-template-columns: repeat(5, 1fr)
+          grid-template-rows: repeat(5, 1fr)
+          justify-items: center
+          align-items: center
+          row-gap: 0.5rem
+          a
+            color: #4C4744
+          div
+            width: 100px
+            height: 80px
+            margin-inline: 0.5rem
+            border: 1px solid black
+            @extend %flex
+            cursor: pointer
+          div:hover
+            border: 1px solid #0070F3
+          .easy
+            background: #FFFFFF
+          .normal
+            background: #FFFFFF
+          .expert
+            background: #FFFFFF
         
 
 
 
 
+
+
+.test
+    user-select: none
+    @extend %flex-column
+    align-items: flex-start
+    gap: 0.5rem
+    .box
+        @extend %flex
+        p
+            font-size: 1.5rem
+        .selectBox
+            cursor: pointer
+            .select
+                @extend %flex
+                justify-content: space-between
+                padding-inline: 0.2rem
+                width: 144px
+                height: 42px
+                border: 1px solid #D1D5DB
+                background: #FFFFFF
+                border-radius: 8px
+                .up
+                    transform: rotate(180deg)
+                .default
+                    font-size: 1rem
+                .wrong
+                    padding-left: 1rem
+                    font-size: 1.5rem
+                    text-decoration: line-through
+                .correct
+                    padding-left: 1rem
+                    font-size: 1.5rem
+                    color: #22C55D
+            .select:hover
+                border: 1px solid black
+            .select:active
+                background: #F3F4F6
+            .select-correct
+                @extend %flex
+                justify-content: space-between
+                padding-inline: 0.2rem
+                width: 144px
+                height: 42px
+                border: 1px solid #D1D5DB
+                border-radius: 8px
+                background: #DCFCE7
+                transition: 0.1s ease-in
+                .correct
+                    padding-left: 1rem
+                    font-size: 1.5rem
+                    color: #22C55D
+            .hidden
+                position: absolute
+                width: 144px
+                @extend %flex-column
+                padding: 0.5rem
+                background: #FFFFFF
+                border: 1px solid #D1D5DB
+                border-radius: 8px
+                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 14px
+                button
+                    background: #FFFFFF
+                    border: none
+                    font-size: 1rem
+                    margin: 0.4rem
+                    padding: 1rem
+                    border-radius: 8px
+                    width: 90%
+                    cursor: pointer
+                button:hover
+                    background: #F3F4F6
+
+                
+
         
+.test2
+    @extend %flex-column
+    align-items: flex-start
+    gap: 1.5rem
+    .testbox
+        @extend %flex-column
+        align-items: flex-start
+        gap: 0.5rem
+        .qBox
+            @extend %flex
+            gap: 0.5rem
+            p
+                font-size: 1.2rem
+            h6
+                background: $cola-red
+                font-size: 1.3rem
+                color: #FFFFFF
+                padding: 0.5rem 0.9rem
+                border-radius: 50%
+        .vBox
+            @extend %flex
+            gap: 0.5rem
+            align-self: flex-start
+            h6
+                font-size: 1.2rem
+                font-weight: 400
+            button
+                background: #FFFFFF
+                padding: 0.4rem 1rem
+                width: 150px
+                border: 1px solid #D1D5DB
+                font-size: 1rem
+                border-radius: 8px
+                cursor: pointer
+            button:hover
+                border: 1px solid black
+            button:active
+                background: #F3F4F6
+
+            
+.video
+    iframe
+        border: none
+        border-radius: 9px
+        width: 600px
+        aspect-ratio: 16/9
