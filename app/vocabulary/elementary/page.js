@@ -5,11 +5,16 @@ import { type1, type2 } from '@/app/objects'
 
 
 export default function Elementary() {
-    const [ isOpen, setIsOpen ] = useState(false)
-    const [ ex0, setEx0 ] = useState({value: '', correct: ''})
-    function changeV(value, correct) {
-            setEx0({value: value, correct: correct})
-            setIsOpen(false)
+    const [ isOpen, setIsOpen ] = useState({'0': false, '1': false})
+    const [ ex, setEx ] = useState(type1)
+ 
+    const f = (arr, setFunc, id, v) => {
+        let array = arr.map(i => {
+            if(i.id === id) {
+                return {...i, value : v}
+            } else i
+        })
+        setFunc(array)
     }
 
     return (
@@ -17,23 +22,7 @@ export default function Elementary() {
             <h1>All types of Exercises</h1>
             <h2>Type 1</h2>
             <div className='test'>
-                {type1.map(i => {
-                    return (
-                    <div className='box' key={i.id}>
-                        <p>{i.pStart}</p>
-                        <div className='selectBox'>
-                            <div onClick={() => setIsOpen(!isOpen)} className={ex0.correct ? 'select-correct' : 'select'}>
-                                <h5 className={ex0.correct ? 'correct' : 'wrong'}>{ex0.value}</h5>
-                                <Image className={isOpen && 'up'} src={i.select.img} width={20} height={20} />
-                            </div>
-                            {isOpen && <div className='hidden'>
-                                {i.hidden.map(b => <button onClick={() => changeV(b.content, b.correct)}>{b.content}</button>)}
-                            </div>}
-                        </div>
-                        <p>{i.pEnd}</p>
-                    </div>
-                    )
-                })}
+                
             </div>
             <h2>Type 2. Choose the correct option for each gap.</h2>
             <div className='test2'>

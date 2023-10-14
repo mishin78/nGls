@@ -15,8 +15,6 @@ sections:
         pre-advanced
 
 
-TO TRY: basic color but on hover different styles
-
-
-exams  кубок
-coxabulaty  точки соденияющеися
+Add one exercies to every section 
+Solve problem with state
+Solve problem with progress

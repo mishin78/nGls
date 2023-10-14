@@ -1,6 +1,26 @@
 export const type1 = [
     {   
-        id: 0,
+        id: '0',
+        pStart: 'Hi, Chris.',
+        value: '',
+        hidden: [
+            {
+                correct: false,
+                content: 'This'
+            },
+            {
+                correct: true,
+                content: 'That'
+            },
+            {
+                correct: false,
+                content: 'Dog'
+            }
+        ],
+        pEnd: 'is my friend Jona. "Hi, Jona. Nice to meet you"'
+    },
+    {   
+        id: '1',
         pStart: 'Hi, Chris.',
         select: {
             default: 'Choose',
@@ -21,7 +41,7 @@ export const type1 = [
             }
         ],
         pEnd: 'is my friend Jona. "Hi, Jona. Nice to meet you"'
-    },
+    }
 ]
 
 
