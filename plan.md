@@ -18,3 +18,6 @@ sections:
 Add one exercies to every section 
 Solve problem with state
 Solve problem with progress
+
+
+Решить вопрос с первым выбраным вариантом

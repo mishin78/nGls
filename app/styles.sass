@@ -201,72 +201,119 @@ main
     user-select: none
     @extend %flex-column
     align-items: flex-start
-    gap: 0.5rem
+    gap: 1.5rem
     .box
         @extend %flex
-        p
+        h6
             font-size: 1.5rem
+            color: #4C4744
+            padding: 0.5rem 0.9rem
+            border-radius: 50%
+            margin-inline: 1rem
+        p
+            font-size: 1.3rem
+            font-weight: 400
         .selectBox
-            cursor: pointer
-            .select
                 @extend %flex
                 justify-content: space-between
                 padding-inline: 0.2rem
-                width: 144px
+                width: 200px
                 height: 42px
                 border: 1px solid #D1D5DB
                 background: #FFFFFF
                 border-radius: 8px
+                position: relative
+                margin-inline: 0.5rem
+                .down
+                    display: block
                 .up
                     transform: rotate(180deg)
-                .default
-                    font-size: 1rem
                 .wrong
                     padding-left: 1rem
-                    font-size: 1.5rem
+                    font-size: 1.3rem
                     text-decoration: line-through
+                    font-weight: 400
                 .correct
                     padding-left: 1rem
-                    font-size: 1.5rem
+                    font-size: 1.3rem
                     color: #22C55D
-            .select:hover
+                    font-weight: 400
+                .hidden
+                    position: absolute
+                    top: 43px
+                    left: 0px
+                    width: 200px
+                    @extend %flex-column
+                    padding: 0.5rem
+                    background: #FFFFFF
+                    border: 1px solid #D1D5DB
+                    border-radius: 8px
+                    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 14px
+                    z-index: 100
+                    button
+                        background: #FFFFFF
+                        border: none
+                        font-size: 1.3rem
+                        margin: 0.4rem
+                        padding: 1rem
+                        border-radius: 8px
+                        width: 90%
+                        cursor: pointer
+                    button:hover
+                        background: #F3F4F6
+        .selectBox:hover
                 border: 1px solid black
-            .select:active
+        .selectBox:active
                 background: #F3F4F6
-            .select-correct
+        .selectBoxCorrect
                 @extend %flex
                 justify-content: space-between
                 padding-inline: 0.2rem
-                width: 144px
+                width: 200px
                 height: 42px
                 border: 1px solid #D1D5DB
-                border-radius: 8px
                 background: #DCFCE7
-                transition: 0.1s ease-in
+                border-radius: 8px
+                position: relative
+                margin-inline: 0.5rem
+                .down
+                    display: block
+                .up
+                    transform: rotate(180deg)
+                .wrong
+                    padding-left: 1rem
+                    font-size: 1.3rem
+                    text-decoration: line-through
+                    font-weight: 400
                 .correct
                     padding-left: 1rem
-                    font-size: 1.5rem
+                    font-size: 1.3rem
                     color: #22C55D
-            .hidden
-                position: absolute
-                width: 144px
-                @extend %flex-column
-                padding: 0.5rem
-                background: #FFFFFF
-                border: 1px solid #D1D5DB
-                border-radius: 8px
-                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 14px
-                button
+                    font-weight: 400
+                .hidden
+                    position: absolute
+                    top: 43px
+                    left: 0px
+                    width: 200px
+                    @extend %flex-column
+                    padding: 0.5rem
                     background: #FFFFFF
-                    border: none
-                    font-size: 1rem
-                    margin: 0.4rem
-                    padding: 1rem
+                    border: 1px solid #D1D5DB
                     border-radius: 8px
-                    width: 90%
-                    cursor: pointer
-                button:hover
-                    background: #F3F4F6
+                    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 14px
+                    z-index: 100
+                    button
+                        background: #FFFFFF
+                        border: none
+                        font-size: 1.3rem
+                        margin: 0.4rem
+                        padding: 1rem
+                        border-radius: 8px
+                        width: 90%
+                        cursor: pointer
+                    button:hover
+                        background: #F3F4F6
+
 
                 
 
@@ -317,3 +364,19 @@ main
         border-radius: 9px
         width: 600px
         aspect-ratio: 16/9
+
+
+.grammarElementary
+    display: inline-block
+    .box
+        @extend %flex
+        justify-content: space-between
+        padding-inline: 0.2rem
+        width: 200px
+        height: 42px
+        border: 1px solid #D1D5DB
+        background: #FFFFFF
+        border-radius: 8px
+        margin-inline: 0.5rem
+    p
+        display: inline
