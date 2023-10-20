@@ -2,7 +2,8 @@
 import Image from 'next/image'
 import { useState } from 'react'
 import { type1, type2 } from '@/app/objects'
-
+import { useDispatch, useSelector } from 'react-redux'
+import { plusOne } from '@/redux/fetures/slices'
 
 
 export default function Elementary() {
@@ -51,9 +52,12 @@ export default function Elementary() {
         setIsOpen(result)
     }
 
+    const dispatch = useDispatch()
+    const count = useSelector((state) => state.countReducer.value.count)
 
     return (
         <main>
+            <h1 onClick={() => dispatch(plusOne())}>Increment main count by 1</h1>
             <h1>All types of Exercises</h1>
             <h2>Type 1</h2>
             <div className='test'>

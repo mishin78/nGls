@@ -1,6 +1,7 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 import Navigation from './navigation'
+import ReduxProvider from '../redux/provider'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,8 +17,10 @@ export default function RootLayout({ children }) {
         <link rel='icon' href='/german.png'/>
       </head>
       <body className={inter.className}>
-        <Navigation />
-        {children}
+        <ReduxProvider>
+          <Navigation />
+          {children}
+        </ReduxProvider>
       </body>
     </html>
   )
