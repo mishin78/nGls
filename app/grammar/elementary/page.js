@@ -1,7 +1,10 @@
 'use client'
-import { useState } from "react"
-import { grammarElementaryFirstText } from "../exercises"
-import Image from 'next/image'
+import { useState, useEffect } from "react"
+import { grammarElementaryFirstText } from "../../data/exercises"
+import SelectInText from "@/app/components/selectInText"
+import { Fragment } from "react"
+import Select from 'react-select'
+import SelectInEx from "@/app/components/selectInEx"
 
 export default function Elementary() {
     const [ text, setText ] = useState(grammarElementaryFirstText)
@@ -23,23 +26,27 @@ export default function Elementary() {
         setText(arr)
     }
 
+    const options = [
+        { value: 'chocolate', label: 'chocolate' },
+        { value: 'strawberry', label: 'strawberry' },
+        { value: 'vanilla', label: 'vanilla' }
+      ]
+
     return (
         <main className="grammarElementary">
-                {text.map(({id, text, value, options, open}) => {
+{/*               {text.map(({id, text, value, options, open}) => {
                     return (
-                        <>
+                        <Fragment key={id}>
                             <span>{text}</span>
-                            <div onClick={() => optionsOpen(id)} className="box">
-                                <h5>{value}</h5>
-                                <Image src='/arrow.svg' width={20} height={20} alt='arrow'/>
-                                {open && <div className="options">
-                                    {options.map(j => <button onClick={(e) => change(e,j.content, id)} key={j.content}>{j.content}</button>)}    
-                                </div>}
-                            </div>
-                        </>
+                            <SelectInText value={value} open={open} options={options} change={change} optionsOpen={optionsOpen} id={id} />
+                        </Fragment>
                     )
-                })}
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                })}  */}
+                <p>I didn't see anybody behind me, but I knew that I 
+                    <Select className="sel" options={options} /> It was my instinct, I could feel it. I saw that a bus
+                    <SelectInEx optoion0='chocolate' optoion1='strawberry' optoion2='vanilla'/>at the bus stop at the end of the street. I ran and ____ it. I didn't ask the bus driver where 4 
+                    because it didn't matter, I just wanted to ____ as fast as possible.
+                </p>
         </main>
     )
 }

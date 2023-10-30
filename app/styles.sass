@@ -57,6 +57,7 @@ nav
     width: 100%
     padding: 1rem 2rem 1rem 2rem
     border: 0.5px solid $grey
+    background: #FFFFFF
     .logoBox
         @extend %flex
         gap: 0.5rem
@@ -148,7 +149,10 @@ main
 
 
 
-.experiment
+.сategory
+    background: inherit
+    margin-top: 0rem
+    padding-top: 2rem
     .levelsBox
         @extend %flex
         h3
@@ -182,8 +186,7 @@ main
             border: 1px solid black
             @extend %flex
             cursor: pointer
-          div:hover
-            border: 1px solid #0070F3
+            border-radius: 8px
           .easy
             background: #FFFFFF
           .normal
@@ -192,9 +195,49 @@ main
             background: #FFFFFF
         
 
+.grammar
+    background: #37003C
+    .gridBox
+        div
+            border: 3px solid white
+
+.vocabulary
+    background-color: #1b3544
+    background-image: linear-gradient(48deg, #1b3544 0%, #7cb5de 38%, #7cb5de 100%)
+    .gridBox
+        div
+            border: 3px solid white
+
+.listening
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mainGrammar
+    background-color: #8BC6EC
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%)
 
 
 .test
@@ -367,7 +410,6 @@ main
 
 
 .grammarElementary
-    display: inline-block
     .box
         @extend %flex
         justify-content: space-between
@@ -378,5 +420,110 @@ main
         background: #FFFFFF
         border-radius: 8px
         margin-inline: 0.5rem
-    p
         display: inline
+    p
+        font-size: 1rem
+        margin-inline: 3rem
+    .sel
+        width: 200px
+        height: 35px
+        display: inline-block
+        font-size: 1rem
+        margin-inline: 0.5rem
+        border-radius: 8px
+
+
+
+        
+        
+
+.selectBox
+    @extend %flex-column
+    width: 200px
+    height: 35px
+    border: 1px solid #D1D5DB
+    border-radius: 8px
+    display: inline-block
+    margin: 1rem 0.5rem
+    position: relative
+    .value
+        @extend %flex
+        justify-content: space-between
+        justify-self: center
+        padding: 1rem
+        h5
+            font-size: 1rem
+    .hidden
+        @extend %flex-column
+        width: 200px
+        border: 1px solid #D1D5DB
+        position: absolute
+        background: white
+        button
+            border: none
+            font-size: 1rem
+        
+
+
+.writingTest
+    @extend  %flex-column
+    gap: 3rem
+    .variants
+        padding: 3rem
+        @extend %flex
+        gap: 1rem
+        border-radius: 1rem
+        background: $blue
+        .used
+            text-decoration: line-through
+            font-size: 1.5rem
+            color: $smoke-white
+        .unused
+            border: none
+            font-size: 1.5rem
+            color: $smoke-white
+    .text
+        width: 80%
+        p
+            font-size: 1.5rem
+            line-height: 1.6666
+            font-weight: 400
+            color: #4C4744
+        input
+            margin-inline: 0.5rem
+            width: 150px
+            text-align: center
+            font-weight: 400
+        input:active
+            border: 1px solid pink
+        .default
+            display: inline
+            font-size: 1.5rem
+            border-radius: 8px
+            color: #4C4744
+        .green
+            font-size: 1.5rem
+            border-radius: 8px
+            background: $blue
+            border: none
+            color: $smoke-white
+        span
+            background: $blue
+            font-size: 1.3rem
+            color: $smoke-white
+            padding: 0.5rem 0.9rem
+            border-radius: 50%
+            margin-inline: 0.5rem
+
+
+
+
+.task0
+    background: white
+    p
+        margin-inline: 2rem
+        font-size: 1.5rem
+    input
+        font-size: 1.5rem
+        width: 20px
+        

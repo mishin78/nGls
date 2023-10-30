@@ -1,12 +1,11 @@
 import '../styles.sass'
 import '../grid.sass'
-import Image from 'next/image'
 import Link from 'next/link'
 
 export default function Vocabulary() {
 
     return (
-        <main className='experiment'>
+        <main className='сategory vocabulary'>
             <div className='levelsBox'>
                 <Link href='/vocabulary'><h3>Elementary</h3></Link>
                 <span></span>

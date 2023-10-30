@@ -7,10 +7,6 @@ export const type1 = [
         hidden: [
             {
                 correct: false,
-                content: ''
-            },
-            {
-                correct: false,
                 content: 'This'
             },
             {
@@ -81,7 +77,7 @@ export const type1 = [
                 content: 'He'
             },
             {
-                correct: true,
+                correct: false,
                 content: 'Him'
             }
         ],

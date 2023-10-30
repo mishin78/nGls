@@ -1,6 +1,6 @@
 'use client'
 import Image from 'next/image'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { type1, type2 } from '@/app/objects'
 import { useDispatch, useSelector } from 'react-redux'
 import { plusOne } from '@/redux/fetures/slices'
@@ -55,9 +55,11 @@ export default function Elementary() {
     const dispatch = useDispatch()
     const count = useSelector((state) => state.countReducer.value.count)
 
+
     return (
         <main>
-            <h1 onClick={() => dispatch(plusOne())}>Increment main count by 1</h1>
+            <button onClick={() => dispatch(plusOne())}>redux test + 1</button>
+            <h1>Counter {count}</h1>
             <h1>All types of Exercises</h1>
             <h2>Type 1</h2>
             <div className='test'>
@@ -66,7 +68,7 @@ export default function Elementary() {
                         <div className='box' key={id}>
                             <h6>{id + 1}</h6>
                             <p>{pStart}</p>
-                            <div onClick={() => openModule(id)} className={hidden[chooesenIndex].correct ? 'selectBoxCorrect' : 'selectBox'}>
+                            <div onClick={() => openModule(id)} className={(hidden[chooesenIndex].correct && value !== '') ? 'selectBoxCorrect' : 'selectBox'}>
                                 <h5 className={hidden[chooesenIndex].correct ? 'correct' : 'wrong'}>{value}</h5>
                                 <Image className={isOpen[id] ? 'up' : 'down'} src='/arrow.svg' width={20} height={20} alt='arrow'/>
                                 {isOpen[id] && <div className='hidden'>
@@ -84,7 +86,7 @@ export default function Elementary() {
                         <div className='box' key={id}>
                             <h6>{id + 1}</h6>
                             <p>{pStart}</p>
-                            <div onClick={() => openHidden(id)} className={hidden[chooesenIndex].correct ? 'selectBoxCorrect' : 'selectBox'}>
+                            <div onClick={() => openHidden(id)} className={(hidden[chooesenIndex].correct && value !== '') ? 'selectBoxCorrect' : 'selectBox'}>
                                 <h5 className={hidden[chooesenIndex].correct ? 'correct' : 'wrong'}>{value}</h5>
                                 <Image className={isOpen[id].hidden ? 'up' : 'down'} src='/arrow.svg' width={20} height={20} alt='arrow'/>
                                 {isOpen[id].hidden && <div className='hidden'>
@@ -96,7 +98,7 @@ export default function Elementary() {
                                 </div>}
                             </div>
                             <p>{pMiddle}</p>
-                            <div onClick={() => openHidden1(id)} className={hidden1[chooesenIndex1].correct ? 'selectBoxCorrect' : 'selectBox'}>
+                            <div onClick={() => openHidden1(id)} className={(hidden1[chooesenIndex1].correct && value1 !== '') ? 'selectBoxCorrect' : 'selectBox'}>
                                 <h5 className={hidden1[chooesenIndex1].correct ? 'correct' : 'wrong'}>{value1}</h5>
                                 <Image className={isOpen[id].hidden1 ? 'up' : 'down'} src='/arrow.svg' width={20} height={20} alt='arrow'/>
                                 {isOpen[id].hidden1 && <div className='hidden'>
@@ -135,6 +137,9 @@ export default function Elementary() {
                     )
                 })}
                 </div>
+
+
+                
                 <h2>Type 3</h2>
                 <vide src='https://www.youtube.com/watch?v=rfSWR3L21zc' width='400' height='400' />
                 <div className='video'><iframe src='https://www.youtube.com/embed/FeIpGznRk0U' /></div>

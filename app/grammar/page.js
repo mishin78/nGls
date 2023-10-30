@@ -7,7 +7,7 @@ import Link from 'next/link'
 export default function Grammar() {
 
     return (
-        <main className='experiment'>
+        <main className='сategory grammar'>
             <div className='levelsBox'>
                 <Link href='/vocabulary'><h3>Elementary</h3></Link>
                 <span></span>
@@ -21,7 +21,7 @@ export default function Grammar() {
             </div>
             <div className='gridBox'>
                 <Link className='block1' href='/grammar/elementary'><div className='block1 easy'>Text</div></Link>
-                <div className='block2 easy'>Exercise 1</div>
+                <Link className='block2' href='/grammar/elementary/task0'><div className='block2 easy'>Task0</div></Link>
                 <div className='block3 easy'>Exercise 1</div>
                 <div className='block4 easy'>Exercise 1</div>
                 <div className='block5 easy'>Exercise 1</div>

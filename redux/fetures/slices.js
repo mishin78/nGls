@@ -1,9 +1,10 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
+//let number = Number(localStorage.getItem('count'))
 
 const initialState = {
     value: {
-        count: 0
+        count: 0 
     }
 }
 
