@@ -17,22 +17,21 @@ export default function TextExercese1() {
                 else return i
             }))
         })
-        setVariants(variants.map(i => {
-            if(inputValues.includes(i.word)) return {...i, used: true}
-            else return {...i, used: false}
-        }))
+
     }
 
 
-    //useEffect(() => {
-    //    setVariants(variants.map(i => {
-    //        if(inputValues.includes(i.word)) return {...i, used: true}
-    //        else return {...i, used: false}
-    //    }))
-    //})
+    useEffect(() => {
+        setTimeout(() => {
+            setVariants(variants.map(i => {
+            if(inputValues.includes(i.word)) return {...i, used: true}
+            else return {...i, used: false}
+        }))}, 3000)
+    })
 
     return (
         <main>
+            <h1 style={{marginInline: '4rem'}}>Vokalwechsel oder nicht? Ergänzen Sie die Verben in der richtigen Form</h1>
               <div className="writingTest">
                     <div className="variants">
                         {variants.map(i => {
@@ -44,8 +43,7 @@ export default function TextExercese1() {
                         })}
                     </div>
                     <div className="text">
-                        <p>Dear Sir/Madam,</p>
-                        <p>I am writing in 
+                        <p>Olli
                         <span>1</span><input className={inputValues[0] === 'also' ? 'green' : 'default'} value={inputValues[0]} onChange={(e) => changeRightInput(e, 0)}/> 
                         o the home exchange service that you offer on your website. We are a family of four who have been considering the possibility of 
                         exchanging our main home for some time and we would be 
@@ -69,15 +67,11 @@ export default function TextExercese1() {
 
 //TO DO: move to separate file
 const writingTest = [
-    { word: 'appreciate', used: false },
-    { word: 'also', used: false },
-    { word: 'faithfully', used: false },
-    { word: 'finally', used: false },
-    { word: 'first of all', used: false },
-    { word: 'forward', used: false },
-    { word: 'further', used: false },
-    { word: 'grateful', used: false },
-    { word: 'know', used: false },
-    { word: 'mind', used: false },
-    { word: 'reference', used: false }
+    { word: 'schlafen', used: false },
+    { word: 'gehen', used: false },
+    { word: 'lesen', used: false },
+    { word: 'sehen', used: false },
+    { word: 'nehmen', used: false },
+    { word: 'fahren', used: false },
+    { word: 'gehen', used: false },
 ]
