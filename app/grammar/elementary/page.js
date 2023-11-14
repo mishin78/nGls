@@ -42,10 +42,10 @@ export default function Elementary() {
                         </Fragment>
                     )
                 })}  */}
-                <p>I didn't see anybody behind me, but I knew that I 
+                <p>I didn`t see anybody behind me, but I knew that I 
                     <Select className="sel" options={options} /> It was my instinct, I could feel it. I saw that a bus
-                    <SelectInEx optoion0='chocolate' optoion1='strawberry' optoion2='vanilla'/>at the bus stop at the end of the street. I ran and ____ it. I didn't ask the bus driver where 4 
-                    because it didn't matter, I just wanted to ____ as fast as possible.
+                    <SelectInEx optoion0='chocolate' optoion1='strawberry' optoion2='vanilla'/>at the bus stop at the end of the street. I ran and ____ it. I didn`t ask the bus driver where 4 
+                    because it didn`t matter, I just wanted to ____ as fast as possible.
                 </p>
         </main>
     )

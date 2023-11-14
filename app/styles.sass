@@ -193,12 +193,27 @@ main
 .grammar
     background: #FFFFFF
     .gridBox
+        .easy
+            @extend %flex-column
+        .normal
+            @extend %flex-column
+        .expert
+            @extend %flex-column
         div
-            border: 1px solid #4C4744
-            background-image: url(/primary-bg.svg)
-            background-size: cover
-            color: #FFFFFF
             font-weight: 500
+        .win
+            background: #00DB73
+            color: #FFFFFF
+            border: none
+        .grey
+            background: #C3B3C5
+            color: #FFFFFF
+            border: none
+        .half-done
+            background: #FFDF00
+            color: $black
+            border: none
+            
 
 .vocabulary
     background-color: #1b3544
@@ -518,20 +533,99 @@ main
 
 
 .task0
-    background: white
-    p
-        margin-inline: 4rem
-        font-size: 1.5rem
-        line-height: 1.7
-        color: #4C4744
-    input
-        font-size: 1.5rem
-        width: 25px
-        border: 1px solid $blue
-        border-radius: 8px
-    .right
-        color: $smoke-white
-        background: $blue
-    .wrong
-        color: #4C4744
+    margin-top: 0
+    padding-top: 3rem
+    display: flex
+    flex-direction: row
+    align-items: flex-start
+    justify-content: center
+    gap: 0
+    .sideBarBox
+        @extend %flex-column
+        align-items: center
+        gap: 2rem
+        margin-left: 3rem
+        .ProgressBarBox
+            @extend %flex-column
+            border: 1px dashed #22C55D
+            width: 250px
+            padding: 1rem
+            border-radius: 8px
+            gap: 0.5rem
+            h4
+                font-size: 2rem
+                color: #4C4744
+            .progressBox
+                display: grid
+                grid-template-columns: repeat(4, 40px)
+                gap: 0.5rem
+                .box
+                    height: 40px
+                    border-radius: 8px
+                    border: 1px solid #4C4744
+                    img
+                        display: none
+                .greenbox
+                    height: 40px
+                    border-radius: 8px
+                    border: 1px solid #22C55D
+                    background: #DCFCE7
+                    @extend %flex                
+        .examples
+            user-select: none
+            @extend %flex-column
+            gap: 1rem
+            margin: 0
+            border: 1px dashed #22C55D
+            width: 250px
+            padding: 1rem
+            border-radius: 8px
+            div
+                display: flex
+                flex-direction: row
+                align-items: center
+                gap: 0.5rem
+                h5
+                    font-size: 2rem
+                    color: #4C4744
+                input:focus
+                    outline: none
+                .right
+                    color: #22C55D
+                    background: #DCFCE7
+                    border: 1px solid #22C55D
+                    width: 60px
+                    border-radius: 8px
+                    font-size: 3rem
+                    @extend %flex
+                .wrong
+                    color: #4C4744
+                    width: 60px
+                    border-radius: 8px
+                    font-size: 3rem
+                    @extend %flex
+    .text
+        @extend %flex-column
+        margin-left: 0
+        gap: 1rem
+        p
+            margin-inline: 4rem
+            font-size: 1.5rem
+            line-height: 1.7
+            color: #4C4744
+        input
+            font-size: 1.5rem
+            width: 30px
+            border: 1px solid $black
+            border-radius: 8px
+        .right
+            color: #22C55D
+            background: #DCFCE7
+            border: 1px solid #22C55D
+        .wrong
+            color: #4C4744
+        input:focus
+            outline: none
         
+
+

@@ -20,21 +20,21 @@ export default function Grammar() {
                 <Link href='/vocabulary'><h3 className='lasth3'>Pre-advanced</h3></Link>
             </div>
             <div className='gridBox'>
-                <Link className='block1' href='/grammar/elementary'><div className='block1 easy'>Text</div></Link>
-                <Link className='block2' href='/grammar/elementary/task0'><div className='block2 easy'>Task0</div></Link>
-                <div className='block3 easy'>Exercise 1</div>
-                <div className='block4 easy'>Exercise 1</div>
-                <div className='block5 easy'>Exercise 1</div>
-                <div className='block6 easy'>Exercise 1</div>
-                <div className='block7 easy'>Exercise 1</div>
-                <div className='block8 normal'>Exercise 1</div>
-                <div className='block9 easy'>Exercise 1</div>
-                <div className='block10 easy'>Exercise 1</div>
-                <div className='block11 easy'>Exercise 1</div>
-                <div className='block12 easy'>Exercise 1</div>
-                <div className='block13 easy'>Exercise 1</div>
-                <div className='block14 expert'>Exercise 1</div>
-                <div className='block15 easy'>Exercise 1</div>
+                <Link className='block1' href='/grammar/elementary'><div className='block1 easy win'>Text</div></Link>
+                <Link className='block2' href='/grammar/elementary/task0'><div className='block2 easy grey'>Task0</div></Link>
+                <div className='block3 easy half-done'>test exersice</div>
+                <div className='block4 easy'>test exersice</div>
+                <div className='block5 easy'>test exersice</div>
+                <div className='block6 easy'>test exersice</div>
+                <div className='block7 easy'>test exersice</div>
+                <div className='block8 normal'>test exersice</div>
+                <div className='block9 easy'>test exersice</div>
+                <div className='block10 easy'>test exersice</div>
+                <div className='block11 easy'>test exersice</div>
+                <div className='block12 easy'>test exersice</div>
+                <div className='block13 easy'>test exersice</div>
+                <div className='block14 expert'>test exersice</div>
+                <div className='block15 easy'>test exersice</div>
             </div>
     </main>
     )

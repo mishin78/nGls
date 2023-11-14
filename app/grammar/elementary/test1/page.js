@@ -4,9 +4,8 @@ import { flushSync } from "react-dom"
 import { Fragment } from "react"
 
 
-
 export default function TextExercese1() {
-    const [inputValues, setInputValues ] = useState(['', '', '', '', '', ''])
+    const [inputValues, setInputValues ] = useState(['', '', '', '', '', '', ''])
     const [variants, setVariants] = useState(writingTest)
 
 
@@ -20,23 +19,74 @@ export default function TextExercese1() {
 
     }
 
+    useEffect(() => {  
+        const updateVariants = (word, condition) => {
+            setTimeout(() => {
+              setVariants((prevVariants) => prevVariants.map(i => (i.word === word ? { ...i, used: condition } : i)))
+            }, 2000)
+          }
 
-    useEffect(() => {
-        setTimeout(() => {
-            setVariants(variants.map(i => {
-            if(inputValues.includes(i.word)) return {...i, used: true}
-            else return {...i, used: false}
-        }))}, 3000)
-    })
+        const updateRepeatedVariants = (condition, index) => {
+          setTimeout(() => {
+              setVariants((prevVariants) => prevVariants.map((i, idx)=> (index === idx ? {...i, used: condition} : i)))
+          }, 2000)
+        }
+      
+          if (inputValues[0] === 'nimmt') {
+            updateVariants('nehmen', true)
+          } else {
+            updateVariants('nehmen', false)
+          }
+      
+          if (inputValues[1] === 'liest') {
+            updateVariants('lesen', true)
+          } else {
+            updateVariants('lesen', false)
+          }
+
+          if (inputValues[2] === 'sieht') {
+            updateVariants('sehen', true)
+          } else {
+            updateVariants('sehen', false)
+          }
+
+          if (inputValues[3] === 'geht') {
+            updateRepeatedVariants(true, 1)
+          } else {
+            updateRepeatedVariants(false, 1)
+          }
+
+          if (inputValues[4] === 'fährt') {
+            updateVariants('fahren', true)
+          } else {
+            updateVariants('fahren', false)
+          }
+
+          if (inputValues[5] === 'geht') {
+            updateRepeatedVariants(true, 6)
+          } else {
+            updateRepeatedVariants(false, 6)
+          }
+
+          if (inputValues[6] === 'schläft') {
+            updateVariants('schlafen', true)
+          } else {
+            updateVariants('schlafen', false)
+          }
+
+    }, [inputValues[0],inputValues[1],inputValues[2],inputValues[3],inputValues[4],inputValues[5], inputValues[6]])
+
+
+    console.log(variants)
 
     return (
         <main>
             <h1 style={{marginInline: '4rem'}}>Vokalwechsel oder nicht? Ergänzen Sie die Verben in der richtigen Form</h1>
               <div className="writingTest">
                     <div className="variants">
-                        {variants.map(i => {
+                        {variants.map((i, idx) => {
                             return (
-                                <Fragment key={i.word}>
+                                <Fragment key={idx}>
                                     <p className={i.used ? 'used' : 'unused'}>{i.word} </p>
                                 </Fragment>
                             )
@@ -44,20 +94,20 @@ export default function TextExercese1() {
                     </div>
                     <div className="text">
                         <p>Olli
-                        <span>1</span><input className={inputValues[0] === 'also' ? 'green' : 'default'} value={inputValues[0]} onChange={(e) => changeRightInput(e, 0)}/> 
-                        o the home exchange service that you offer on your website. We are a family of four who have been considering the possibility of 
-                        exchanging our main home for some time and we would be 
-                        <span>2</span><input className={inputValues[1] === 'faithfully' ? 'green' : 'default'} value={inputValues[1]} onChange={(e) => changeRightInput(e, 1)}/>
-                        if you could answer a few questions. 
-                        <span>3</span><input className={inputValues[2] === 'forward' ? 'green' : 'default'} value={inputValues[2]} onChange={(e) => changeRightInput(e, 2)}/>
-                         , I would like to 
-                         <span>4</span><input className={inputValues[3] === 'reference' ? 'green' : 'default'} value={inputValues[3]} onChange={(e) => changeRightInput(e, 3)}/>
-                        if some kind of insurance is included in the fee that you charge for your services. We have our own home insurer, but we are not sure if we 
-                        should talk to them before doing an exchange. I would 
-                        <span>5</span><input className={inputValues[4] === 'know' ? 'green' : 'default'} value={inputValues[4]} onChange={(e) => changeRightInput(e, 4)}/> some information on this point. I would 
-                        <span>6</span><input className={inputValues[5] === 'first of all' ? 'green' : 'default'} value={inputValues[5]} onChange={(e) => changeRightInput(e, 5)}/> 
-                        like to know if pets can be included in the exchange. We have a cat and we do not have anybody to look after him while we are away. Could you 
-                        tell me if exchanging pets or leaving a pet in the care of the people who are coming to your home is a common practice?
+                        <input className={inputValues[0] === 'nimmt' ? 'green' : 'default'} value={inputValues[0]} onChange={(e) => changeRightInput(e, 0)}/> 
+                        immer  den  Bus zur Arbeit.  Mittags 
+                        <input className={inputValues[1] === 'liest' ? 'green' : 'default'} value={inputValues[1]} onChange={(e) => changeRightInput(e, 1)}/>
+                        er ein Buch und
+                        <input className={inputValues[2] === 'sieht' ? 'green' : 'default'} value={inputValues[2]} onChange={(e) => changeRightInput(e, 2)}/>
+                        einen Film im Fernsehen. Am Nachmittag
+                         <input className={inputValues[3] === 'geht' ? 'green' : 'default'} value={inputValues[3]} onChange={(e) => changeRightInput(e, 3)}/>
+                         er aus dem Haus.  Er
+                        <input className={inputValues[4] === 'fährt' ? 'green' : 'default'} value={inputValues[4]} onChange={(e) => changeRightInput(e, 4)}/> 
+                        mit dem Fahrrad in die Stadt. Am Abend  
+                       <input className={inputValues[5] === 'geht' ? 'green' : 'default'} value={inputValues[5]} onChange={(e) => changeRightInput(e, 5)}/> 
+                        r früh ins Bett. Olli
+                        <input className={inputValues[6] === 'schläft' ? 'green' : 'default'} value={inputValues[6]} onChange={(e) => changeRightInput(e, 6)}/> 
+                        immer gut.
                         </p>
                     </div>
                 </div>
