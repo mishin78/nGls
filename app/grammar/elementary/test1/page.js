@@ -2,6 +2,8 @@
 import React, { useState, useEffect } from "react"
 import { flushSync } from "react-dom"
 import { Fragment } from "react"
+import InputInText from "@/app/components/inputInText"
+import RepeatedInputInText from "@/app/components/repeatedInputInText"
 
 
 export default function TextExercese1() {
@@ -77,11 +79,9 @@ export default function TextExercese1() {
     }, [inputValues[0],inputValues[1],inputValues[2],inputValues[3],inputValues[4],inputValues[5], inputValues[6]])
 
 
-    console.log(variants)
-
     return (
         <main>
-            <h1 style={{marginInline: '4rem'}}>Vokalwechsel oder nicht? Ergänzen Sie die Verben in der richtigen Form</h1>
+            <h1 style={{marginInline: '6rem'}}>Vokalwechsel oder nicht? Ergänzen Sie die Verben in der richtigen Form</h1>
               <div className="writingTest">
                     <div className="variants">
                         {variants.map((i, idx) => {
@@ -93,22 +93,12 @@ export default function TextExercese1() {
                         })}
                     </div>
                     <div className="text">
-                        <p>Olli
-                        <input className={inputValues[0] === 'nimmt' ? 'green' : 'default'} value={inputValues[0]} onChange={(e) => changeRightInput(e, 0)}/> 
-                        immer  den  Bus zur Arbeit.  Mittags 
-                        <input className={inputValues[1] === 'liest' ? 'green' : 'default'} value={inputValues[1]} onChange={(e) => changeRightInput(e, 1)}/>
-                        er ein Buch und
-                        <input className={inputValues[2] === 'sieht' ? 'green' : 'default'} value={inputValues[2]} onChange={(e) => changeRightInput(e, 2)}/>
-                        einen Film im Fernsehen. Am Nachmittag
-                         <input className={inputValues[3] === 'geht' ? 'green' : 'default'} value={inputValues[3]} onChange={(e) => changeRightInput(e, 3)}/>
-                         er aus dem Haus.  Er
-                        <input className={inputValues[4] === 'fährt' ? 'green' : 'default'} value={inputValues[4]} onChange={(e) => changeRightInput(e, 4)}/> 
-                        mit dem Fahrrad in die Stadt. Am Abend  
-                       <input className={inputValues[5] === 'geht' ? 'green' : 'default'} value={inputValues[5]} onChange={(e) => changeRightInput(e, 5)}/> 
-                        r früh ins Bett. Olli
-                        <input className={inputValues[6] === 'schläft' ? 'green' : 'default'} value={inputValues[6]} onChange={(e) => changeRightInput(e, 6)}/> 
-                        immer gut.
-                        </p>
+                        <p>Olli <InputInText word={'nehmen'} correctUsage={'nimmt'} setVariants={setVariants} /> immer  den  Bus zur Arbeit.</p>  
+                        <p> Mittags <InputInText word={'lesen'} correctUsage={'liest'} setVariants={setVariants} /> er ein Buch und <InputInText word={'sehen'} correctUsage={'sieht'} setVariants={setVariants} /> einen Film im Fernsehen.</p>
+                        <p>Am Nachmittag <RepeatedInputInText correctUsage={'geht'} setVariants={setVariants} index={1}/> er aus dem Haus.</p>  
+                        <p>Er <InputInText word={'fahren'} correctUsage={'fährt'} setVariants={setVariants} /> mit dem Fahrrad in die Stadt.</p> 
+                        <p>Am Abend <RepeatedInputInText correctUsage={'geht'} setVariants={setVariants} index={6} /> er früh ins Bett.</p>
+                        <p>Olli <InputInText word={'schlafen'} correctUsage={'schläft'} setVariants={setVariants} /> immer gut.</p>
                     </div>
                 </div>
         </main>
@@ -123,5 +113,5 @@ const writingTest = [
     { word: 'sehen', used: false },
     { word: 'nehmen', used: false },
     { word: 'fahren', used: false },
-    { word: 'gehen', used: false },
+    { word: 'gehen', used: false }
 ]
