@@ -16,7 +16,5 @@ export default function RepeatedInputInText({ correctUsage, setVariants, index }
         }
     }, [inputValue])
 
-    return (
-        <input className={correctUsage === inputValue ? 'green' : 'default'} value={inputValue} onChange={(e) => setInputValue(e.target.value)} />
-    )
+    return <input className={correctUsage === inputValue ? 'green' : 'default'} value={inputValue} onChange={(e) => setInputValue(e.target.value)} />
 }

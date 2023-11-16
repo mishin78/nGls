@@ -16,7 +16,5 @@ export default function InputInText({ word, correctUsage, setVariants }) {
         }
     }, [inputValue])
 
-    return (
-        <input className={correctUsage === inputValue ? 'green' : 'default'} value={inputValue} onChange={(e) => setInputValue(e.target.value)} />
-    )
+    return <input className={correctUsage === inputValue ? 'green' : 'default'} value={inputValue} onChange={(e) => setInputValue(e.target.value)} />
 }
