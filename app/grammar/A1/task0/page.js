@@ -17,14 +17,23 @@ export default function Task0() {
     const [ value8, setValue8 ] = useState('')
     const [ value9, setValue9 ] = useState('')
     const [ value10, setValue10 ] = useState('')
+    const [ value11, setValue11 ] = useState('')
+    const [ value12, setValue12 ] = useState('')
+    const [ value13, setValue13 ] = useState('')
+    const [ value14, setValue14 ] = useState('')
+    const [ value15, setValue15 ] = useState('')
+    const [ value16, setValue16 ] = useState('')
+    const [ value17, setValue17 ] = useState('')
     
     
 
     return (
-        <main className="grammar elementary task0">
+        <div className="grammar elementary task0">
             <div className="sideBarBox">
                 <Examples />
-                <ProgressBar value={value} value1={value1} value2={value2} value3={value3} value4={value4} value5={value5} value6={value6} value7={value7} value8={value8} value9={value9} value10={value10}/>
+                <ProgressBar value={value} value1={value1} value2={value2} value3={value3} value4={value4} value5={value5}
+                             value6={value6} value7={value7} value8={value8} value9={value9} value10={value10} value11={value11}
+                             value12={value12} value13={value13} value14={value14} value15={value15} value16={value16} value17={value17}/>
             </div>
             <div className="text">
                 <h1>Konjugation  im  Präsens</h1>
@@ -48,13 +57,26 @@ export default function Task0() {
 
                 <div className="part2">
                     <h2>Übung 2</h2>
-                    <p>1. - Woher  komm__(en) Sie ? <br/> — Ich komm__(e) aus Polen. </p>
-                    <p> — Und wo wohn__(en) Sie jetzt ?  <br/> — Ich wohn__(e) jetzt in Berlin. </p>
-                    <p>2. - Hallo Hans! Woher  komm__(st) du ? <br/> Und wo  wohn__(st) du jetzt ? </p>
-                    <p>3. — Wir sind Olha und Tatiana. <br/> — Woher  komm__ (t)  ihr ?<br/>— Wir  kommen aus die USA.</p>
+                    <div>
+                        <p>— Woher  komm<input className={value11 === 'en' ? 'right' : 'wrong'} value={value11} onChange={e => setValue11(e.target.value)}/> Sie ?</p>
+                        <p>— Ich komm<input className={value12 === 'e' ? 'right' : 'wrong'} value={value12} onChange={e => setValue12(e.target.value)}/> aus Polen. </p>
+                    </div>
+                    <div>
+                        <p>— Und wo wohn<input className={value13 === 'en' ? 'right' : 'wrong'} value={value13} onChange={e => setValue13(e.target.value)}/> Sie jetzt ? </p>
+                        <p>— Ich wohn<input className={value14 === 'e' ? 'right' : 'wrong'} value={value14} onChange={e => setValue14(e.target.value)}/> jetzt in Berlin.</p>
+                    </div>
+                    <div>
+                        <p>— Hallo Hans! Woher  komm<input className={value15 === 'st' ? 'right' : 'wrong'} value={value15} onChange={e => setValue15(e.target.value)}/>  du ?</p>
+                        <p>— Und wo  wohn<input className={value16 === 'st' ? 'right' : 'wrong'} value={value16} onChange={e => setValue16(e.target.value)}/>  du jetzt ?</p>
+                    </div>
+                    <div>
+                        <p>— Wir sind Olha und Tatiana.</p>
+                        <p>— Woher  komm<input className={value17 === 't' ? 'right' : 'wrong'} value={value17} onChange={e => setValue17(e.target.value)}/> ihr ?</p>
+                        <p>— Wir  kommen aus die USA.</p>
+                    </div>
                 </div>
 
             </div>
-        </main>
+        </div>
     )
 }
