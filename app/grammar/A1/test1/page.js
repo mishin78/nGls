@@ -1,9 +1,11 @@
 'use client'
+import './style.sass'
 import React, { useState, useEffect } from "react"
 import { flushSync } from "react-dom"
 import { Fragment } from "react"
 import InputInText from "@/app/components/inputInText"
 import RepeatedInputInText from "@/app/components/repeatedInputInText"
+import SprechenInput from '@/app/components/sprechenInput'
 
 
 export default function TextExercese1() {
@@ -31,6 +33,22 @@ export default function TextExercese1() {
                   <p>Am Abend <RepeatedInputInText correctUsage={'geht'} setVariants={setVariants} index={6} /> er früh ins Bett.</p>
                   <p>Olli <InputInText word={'schlafen'} correctUsage={'schläft'} setVariants={setVariants} /> immer gut.</p>
               </div>
+            </div>
+            <div className="secondTest">
+                <h5>1. Ergänzen Sie die richtige Form von sprechen.</h5>
+                <div>
+                    <h6>-<SprechenInput correctValue={'Sprechen'} capitalLetter={true}/> Sie Ukrainisch, Herr Gonzalez?</h6>
+                    <h6>- Nein, ich <SprechenInput correctValue={'spreche'} capitalLetter={false}/> Spanisch und ein bisschen Deutsch.</h6>
+                    <h6>Aber meine Frau <SprechenInput correctValue={'spricht'} capitalLetter={false}/> gut Ukrainisch.</h6>
+                </div>
+                <div>
+                    <h6>- Marcel und Anna, welche Sprachen  <SprechenInput correctValue={'sprecht'} capitalLetter={false}/> ihr?</h6>
+                    <h6> - Wir <SprechenInput correctValue={'sprechen'} capitalLetter={false}/> Französisch  und Englisch.</h6>
+                </div>
+                <div>
+                    <h6>—<SprechenInput correctValue={'Spricht'} capitalLetter={true}/>  Marco  auch Französisch?</h6>
+                    <h6>— Nein, er  <SprechenInput correctValue={'spricht'} capitalLetter={false}/> Spanisch und ein bisschen Deutsch.</h6>
+                </div>
             </div>
         </main>
     )

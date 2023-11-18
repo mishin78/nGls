@@ -216,8 +216,6 @@ main
             
 
 .vocabulary
-    background-color: #1b3544
-    background-image: linear-gradient(48deg, #1b3544 0%, #7cb5de 38%, #7cb5de 100%)
     .gridBox
         div
             border: 3px solid white
@@ -478,60 +476,9 @@ main
             font-size: 1rem
         
 
-.test1
-    width: 600px
-    h1
-        font-size: 2rem
-    .writingTest
-        @extend  %flex-column
-        gap: 3rem
-        .variants
-            padding: 1rem 2rem
-            @extend %flex
-            gap: 1rem
-            border-radius: 1rem
-            background: $blue
-            .used
-                text-decoration: line-through
-                font-size: 1.2rem
-                color: $smoke-white
-            .unused
-                border: none
-                font-size: 1.2rem
-                color: $smoke-white
-        .text
-            @extend %flex-column
-            align-items: flex-start
-            p
-                font-size: 1.5rem
-                line-height: 1.6666
-                font-weight: 400
-                color: #4C4744
-            input
-                margin-inline: 0.5rem
-                width: 150px
-                text-align: center
-                font-weight: 400
-            input:active
-                border: 1px solid pink
-            .default
-                display: inline
-                font-size: 1.5rem
-                border-radius: 8px
-                color: #4C4744
-            .green
-                font-size: 1.5rem
-                border-radius: 8px
-                background: $blue
-                border: none
-                color: $smoke-white
-            span
-                background: $blue
-                font-size: 1.3rem
-                color: $smoke-white
-                padding: 0.5rem 0.9rem
-                border-radius: 50%
-                margin-inline: 0.5rem
+
+
+
 
 
 
@@ -641,18 +588,3 @@ main
 
 
 
-
-@media screen and ( max-width:  685px)
-    .test1
-        width: 400px
-        .writingTest
-            gap: 1.5rem
-            .variants
-                display: grid
-                grid-template-columns: repeat(2, 1fr)
-                gap: 1.5rem
-                padding: 1rem 3rem
-            .text
-                input
-                    margin-inline: 0.1rem
-    

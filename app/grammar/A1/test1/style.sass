@@ -1,0 +1,177 @@
+$blue: #2557A2
+$smoke-white: #FCFAF4
+$bread-color: #CEA851
+$pink: #FF0080
+$mustard: #F5A622
+$lightgreen: #4FE3C2
+$violet: #7928C9
+$grey: #EAEAEA
+$black: #030303
+$rolex-green: #01613A
+$rolex-gold: #A37F2D
+$mc-red: #DA291C
+$mc-yellow: #FFC72C
+$mc-black: #27251F
+$cola-red: #F40009
+
+
+
+%flex-column
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+
+%flex
+    display: flex
+    justify-content: center
+    align-items: center
+    
+    
+.test1
+    width: 600px
+    margin-bottom: 35rem
+    display: grid
+    gap: 4rem
+    h1
+        font-size: 2rem
+    h5
+        font-size: 1.8rem
+    .writingTest
+        @extend  %flex-column
+        gap: 3rem
+        .variants
+            padding: 1rem 2rem
+            @extend %flex
+            gap: 1rem
+            border-radius: 1rem
+            background: $blue
+            .used
+                text-decoration: line-through
+                font-size: 1.2rem
+                color: $smoke-white
+            .unused
+                border: none
+                font-size: 1.2rem
+                color: $smoke-white
+        .text
+            @extend %flex-column
+            align-items: flex-start
+            p
+                font-size: 1.5rem
+                line-height: 1.6666
+                font-weight: 400
+                color: #4C4744
+            input
+                margin-inline: 0.5rem
+                width: 150px
+                text-align: center
+                font-weight: 400
+                border: 1px solid #4C4744
+            .default
+                display: inline
+                font-size: 1.5rem
+                border-radius: 8px
+                color: #4C4744
+            .green
+                font-size: 1.5rem
+                border-radius: 8px
+                background: $blue
+                border: none
+                color: $smoke-white
+            span
+                background: $blue
+                font-size: 1.3rem
+                color: $smoke-white
+                padding: 0.5rem 0.9rem
+                border-radius: 50%
+                margin-inline: 0.5rem
+    .secondTest
+        display: grid
+        gap: 1rem
+        color: #4C4744
+        h5
+            font-size: 1.5rem
+            font-weight: 500
+        div
+            display: grid
+            gap: 0.5rem
+            h6
+                font-size: 1.5rem
+                font-weight: 400
+                line-height: 1.7
+            .sprechenInputBox
+                user-select: none
+                display: inline-block
+                position: relative
+                background: #FFFFFF
+                width: 150px
+                margin-inline: 0.5rem
+                .input
+                    @extend %flex
+                    justify-content: flex-start
+                    width: 150px
+                    height: 40px
+                    border: 1px solid #4C4744
+                    border-radius: 8px
+                    text-align: center
+                    position: relative
+                    .correct
+                        color: $blue
+                        margin-left: 10px
+                        font-weight: 400
+                    .default
+                        margin-left: 10px
+                        font-weight: 400
+                    .wrong
+                        text-decoration: line-through
+                        margin-left: 10px
+                        font-weight: 400
+                    .open
+                        position: absolute
+                        right: 4px
+                        transform: rotate(180deg)
+                    .closed
+                        position: absolute
+                        right: 4px
+                .openedModule
+                    display: grid
+                    justify-content: center
+                    position: absolute
+                    width: 150px
+                    right: 0px
+                    border-radius: 8px
+                    background: #FFFFFF
+                    border: 1px solid #e7e7e7
+                    z-index: 1000
+                    h4
+                        font-size: 1rem
+                        font-weight: 400
+                        cursor: pointer
+                        padding: 0.5rem
+                        width: 150px
+                        text-align: center
+                    h4:hover
+                        background: $blue
+                        color: $smoke-white
+                .hiddenModule
+                    display: none
+
+
+
+
+
+@media screen and ( max-width:  685px)
+    .test1
+        width: 400px
+        .writingTest
+            gap: 1.5rem
+            .variants
+                display: grid
+                grid-template-columns: repeat(2, 1fr)
+                gap: 1.5rem
+                padding: 1rem 3rem
+            .text
+                input
+                    margin-inline: 0.1rem
+    
