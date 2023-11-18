@@ -2,6 +2,7 @@
 import { useState } from "react"
 import Examples from "@/app/components/examples"
 import ProgressBar from "@/app/components/progress"
+import './style.sass'
 
 
 export default function Task0() {
@@ -28,6 +29,7 @@ export default function Task0() {
             <div className="text">
                 <h1>Konjugation  im  Präsens</h1>
                 <h2>Ergänzen Sie die  Endungen.</h2>
+                <h2>Übung 1</h2>
                 <p>Hallo Karim,<br/> wie geh
                     <input className={value === 't' ? 'right' : 'wrong'} value={value} onChange={e => setValue(e.target.value)}/> es dir? Ich wohn<input className={value1 === 'e' ? 'right' : 'wrong'} value={value1} onChange={e => setValue1(e.target.value)}/> in Frankfurt und lern<input className={value2 === 'e' ? 'right' : 'wrong'} value={value2} onChange={e => setValue2(e.target.value)}/> Deutsch. 
                     Wir sind 16 Teilnehmer im Kurs, viele sprechen schon ganz gut Deutsch. 
@@ -43,6 +45,15 @@ export default function Task0() {
                     <input className={value10 === 'st' ? 'right' : 'wrong'} value={value10} onChange={e => setValue10(e.target.value)}/> du am 
                     Sonntag nach Frankfurt?<br/>
                     Liebe Grüße, Ella</p>
+
+                <div className="part2">
+                    <h2>Übung 2</h2>
+                    <p>1. - Woher  komm__(en) Sie ? <br/> — Ich komm__(e) aus Polen. </p>
+                    <p> — Und wo wohn__(en) Sie jetzt ?  <br/> — Ich wohn__(e) jetzt in Berlin. </p>
+                    <p>2. - Hallo Hans! Woher  komm__(st) du ? <br/> Und wo  wohn__(st) du jetzt ? </p>
+                    <p>3. — Wir sind Olha und Tatiana. <br/> — Woher  komm__ (t)  ihr ?<br/>— Wir  kommen aus die USA.</p>
+                </div>
+
             </div>
         </main>
     )

@@ -13,7 +13,7 @@ export default function SprechenInput({ correctValue, capitalLetter }) {
 
 
     return (
-        <div className="sprechenInputBox">
+        <div className={value === correctValue ? 'sprechenInputBoxBlue' : "sprechenInputBox"} >
             <div onClick={() => setIsOpen(!isOpen)} className="input">
                 <h5 className={value === correctValue ? 'correct' : (value === '...' ? 'default' : 'wrong')}>
                     {value}
