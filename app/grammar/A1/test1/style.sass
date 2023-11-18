@@ -30,9 +30,13 @@ $cola-red: #F40009
     
 .test1
     width: 600px
-    margin-bottom: 35rem
     display: grid
+    align-content: start
+    justify-content: center
+    padding: 5rem 0 5rem 0
     gap: 4rem
+    img
+        border-radius: 2px
     h1
         font-size: 2rem
     h5
@@ -54,38 +58,38 @@ $cola-red: #F40009
                 border: none
                 font-size: 1.2rem
                 color: $smoke-white
-        .text
-            @extend %flex-column
-            align-items: flex-start
-            p
-                font-size: 1.5rem
-                line-height: 1.6666
-                font-weight: 400
-                color: #4C4744
-            input
-                margin-inline: 0.5rem
-                width: 150px
-                text-align: center
-                font-weight: 400
-                border: 1px solid #4C4744
-            .default
-                display: inline
-                font-size: 1.5rem
-                border-radius: 8px
-                color: #4C4744
-            .green
-                font-size: 1.5rem
-                border-radius: 8px
-                background: $blue
-                border: none
-                color: $smoke-white
-            span
-                background: $blue
-                font-size: 1.3rem
-                color: $smoke-white
+    .text
+        @extend %flex-column
+        align-items: flex-start
+        p
+            font-size: 1.5rem
+            line-height: 1.6666
+            font-weight: 400
+            color: #4C4744
+        input
+            margin-inline: 0.5rem
+            width: 150px
+            text-align: center
+            font-weight: 400
+            border: 1px solid #4C4744
+        .default
+            display: inline
+            font-size: 1.5rem
+            border-radius: 8px
+            color: #4C4744
+        .green
+            font-size: 1.5rem
+            border-radius: 8px
+            background: $blue
+            border: none
+            color: $smoke-white
+        span
+            background: $blue
+            font-size: 1.3rem
+            color: $smoke-white
                 padding: 0.5rem 0.9rem
-                border-radius: 50%
-                margin-inline: 0.5rem
+            border-radius: 50%
+            margin-inline: 0.5rem
     .secondTest
         display: grid
         gap: 1rem

@@ -1,7 +1,7 @@
 'use client'
 import './style.sass'
-import React, { useState, useEffect } from "react"
-import { flushSync } from "react-dom"
+import React, { useState } from "react"
+import Image from 'next/image'
 import { Fragment } from "react"
 import InputInText from "@/app/components/inputInText"
 import RepeatedInputInText from "@/app/components/repeatedInputInText"
@@ -12,7 +12,8 @@ export default function TextExercese1() {
     const [variants, setVariants] = useState(writingTest)
 
     return (
-        <main className="test1">
+        <div className="test1">
+            <Image alt='таблица неправильных глаголов' width={800} height={380} src={'/glagolu.jpeg'}/>
             <h1>Vokalwechsel oder nicht? Ergänzen Sie die Verben in der richtigen Form</h1>
             <div className="writingTest">
                 <div className="variants">
@@ -50,7 +51,7 @@ export default function TextExercese1() {
                     <h6>— Nein, er  <SprechenInput correctValue={'spricht'} capitalLetter={false}/> Spanisch und ein bisschen Deutsch.</h6>
                 </div>
             </div>
-        </main>
+        </div>
     )
 }
 
