@@ -28,7 +28,7 @@ export default function TextExercese1() {
               <div className="text">
                   <p>Olli <InputInText word={'nehmen'} correctUsage={'nimmt'} setVariants={setVariants} /> immer  den  Bus zur Arbeit.</p>  
                   <p> Mittags <InputInText word={'lesen'} correctUsage={'liest'} setVariants={setVariants} /> er ein Buch</p>
-                  <p>und <InputInText word={'sehen'} correctUsage={'sieht'} setVariants={setVariants} /> einen Film im Fernsehen.</p>
+                  <p>und <InputInText word={'sehen'} correctUsage={'sieht'} setVariants={setVariants} /> einen Film.</p>
                   <p>Am Nachmittag <RepeatedInputInText correctUsage={'geht'} setVariants={setVariants} index={1}/> er aus dem Haus.</p>  
                   <p>Er <InputInText word={'fahren'} correctUsage={'fährt'} setVariants={setVariants} /> mit dem Fahrrad in die Stadt.</p> 
                   <p>Am Abend <RepeatedInputInText correctUsage={'geht'} setVariants={setVariants} index={6} /> er früh ins Bett.</p>
