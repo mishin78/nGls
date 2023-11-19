@@ -55,6 +55,11 @@ export default function Task0() {
                     Sonntag nach Frankfurt?<br/>
                     Liebe Grüße, Ella</p>
 
+                    <ProgressBar value={value} value1={value1} value2={value2} value3={value3} value4={value4} value5={value5}
+                             value6={value6} value7={value7} value8={value8} value9={value9} value10={value10} value11={value11}
+                             value12={value12} value13={value13} value14={value14} value15={value15} value16={value16} value17={value17}/>
+                             
+
                 <div className="part2">
                     <h2>Übung 2</h2>
                     <div>

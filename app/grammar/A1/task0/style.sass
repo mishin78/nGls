@@ -106,6 +106,33 @@ $cola-red: #F40009
         @extend %flex-column
         margin-left: 0
         gap: 1rem
+        .ProgressBarBox
+            margin-top: 3rem
+            @extend %flex-column
+            border: 1px dashed #22C55D
+            padding: 1rem
+            border-radius: 8px
+            gap: 0.5rem
+            h4
+                font-size: 2rem
+                color: #4C4744
+            .progressBox
+                @extend %flex
+                gap: 0.5rem
+                .box
+                    height: 40px
+                    width: 40px
+                    border-radius: 8px
+                    border: 1px solid #4C4744
+                    img
+                        display: none
+                .greenbox
+                    height: 40px
+                    width: 40px
+                    border-radius: 8px
+                    border: 1px solid #22C55D
+                    background: #DCFCE7
+                    @extend %flex     
         h2
             color: #4C4744
             font-weight: 400
@@ -129,7 +156,7 @@ $cola-red: #F40009
         input:focus
             outline: none
         .part2
-            margin-top: 5rem
+            margin-top: 3rem
             align-self: flex-start
             display: grid
             align-content: center
