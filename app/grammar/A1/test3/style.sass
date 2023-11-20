@@ -13,6 +13,7 @@
         font-size: 1.7rem
         justify-self: center
     .exampleBox
+        user-select: none
         justify-self: center
         display: flex
         justify-content: space-between
@@ -37,12 +38,26 @@
             border-radius: 8px
             color: #4C4744
     .box
-        display: grid
-        gap: 1rem
-        .row
+        display: flex
+        align-items: center
+        justify-content: center
+        .words
+            margin-right: 1rem
             display: flex
-            justify-content: flex-start
-            align-items: center
+            justify-content: center
+            align-items: flex-start
+            flex-direction: column
+            gap: 0.5rem
+            h6
+                color: #4C4744
+                font-size: 1.5rem
+                font-weight: 400
+        .text
+            display: flex
+            justify-content: center
+            align-items: flex-start
+            flex-direction: column
+            gap: 0.5rem
             input
                 border: 1px solid #4C4744
                 outline: none
@@ -55,14 +70,20 @@
                 text-align: center
             input:focus
                 border: 1px solid #86754D
+            .default
+                border: 1px solid #4C4744
+                outline: none
+                margin-inline: 0.5rem
+                border-radius: 8px
+                font-size: 1.5rem
+                font-weight: 400
+                width: 100px
+                color: #4C4744
+                text-align: center
             .correct
                 background: #AA483D
                 color: #FFFFFF
                 border: 1px solid #86754D
-            h6
-                color: #4C4744
-                font-size: 1.5rem
-                font-weight: 400
             p
                 margin-inline: 2rem
                 color: #4C4744
