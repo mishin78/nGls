@@ -10,7 +10,7 @@ export default function Grammar() {
         <main className='сategory grammar'>
             <Levels />
             <div className='gridBox'>
-                <Link className='block1' href='/grammar/A1'><div>Text</div></Link>
+                <Link className='block1' href='/grammar'><div>-nothing-</div></Link>
                 <Link className='block2' href='/grammar/A1/task0'><div>Task0</div></Link>
                 <Link className='block3 easy' href='/grammar/A1/test1'><div>Verben mit Vokalwechsel</div></Link>
                 <Link className='block4 easy' href='/grammar/A1/test3'><div>Test 3</div></Link>
