@@ -47,8 +47,8 @@ export default function TextExercese1() {
                     <h6> - Wir <SprechenInput correctValue={'sprechen'} capitalLetter={false}/> Französisch  und Englisch.</h6>
                 </div>
                 <div>
-                    <h6>—<SprechenInput correctValue={'Spricht'} capitalLetter={true}/>  Marco  auch Französisch?</h6>
-                    <h6>— Nein, er  <SprechenInput correctValue={'spricht'} capitalLetter={false}/> Spanisch und ein bisschen Deutsch.</h6>
+                    <h6>-<SprechenInput correctValue={'Spricht'} capitalLetter={true}/>  Marco  auch Französisch?</h6>
+                    <h6>- Nein, er  <SprechenInput correctValue={'spricht'} capitalLetter={false}/> Spanisch und ein bisschen Deutsch.</h6>
                 </div>
             </div>
         </div>
