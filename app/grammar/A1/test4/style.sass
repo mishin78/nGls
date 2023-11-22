@@ -1,0 +1,132 @@
+%flex-column
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+
+%flex
+    display: flex
+    justify-content: center
+    align-items: center
+    
+    
+.perfektBox
+    padding: 3rem 1rem
+    margin-inline: 3rem
+    text-align: center
+    display: grid
+    gap: 2rem
+    color: #4C4744
+    .test0
+        display: grid
+        gap: 1rem
+        h6
+            font-weight: 400
+            font-size: 1.6rem
+        p
+            line-height: 2
+            font-size: 1.5rem
+            text-wrap: balance
+        .variantsBox
+            padding: 1rem
+            @extend %flex
+            gap: 1rem
+            border-radius: 1rem
+            .used
+                text-decoration: line-through
+                font-size: 1.5rem
+                color: #007CB2
+                font-weight: 500
+            .unused
+                border: none
+                font-size: 1.5rem
+                color: #007CB2
+                font-weight: 500
+        input
+            margin-inline: 0.2rem
+            outline: none
+            width: 150px
+            text-align: center
+            font-weight: 400
+            border: 2px dashed #727272
+            padding: 0.2rem 0
+        input:focus
+            border: 2px dashed #007CB2
+        .default
+            display: inline
+            font-size: 1.5rem
+            border-radius: 8px
+            color: #4C4744
+        .green
+            font-size: 1.5rem
+            border-radius: 8px
+            background: #007CB2
+            color: #FFFAF4
+            border: 2px solid #007CB2
+    .test1
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        gap: 1rem
+        h6
+            font-weight: 400
+            font-size: 1.6rem
+        p
+            line-height: 2
+            font-size: 1.5rem
+            text-wrap: balance
+            align-self: flex-start
+        .default
+            border: 1px solid #010101
+            outline: none
+            border-radius: 8px
+            font-size: 1.5rem
+            font-weight: 400
+            width: 100px
+            color: #010101
+            text-align: center
+        .correct
+            outline: none
+            border-radius: 8px
+            font-size: 1.5rem
+            font-weight: 400
+            width: 100px
+            background: #007CB2
+            color: #FFFAF4
+            border: 1px solid #010101
+            text-align: center
+    .test2
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        gap: 1rem
+        h6
+            font-weight: 400
+            font-size: 1.6rem
+        p
+            align-self: flex-start
+            line-height: 2
+            font-size: 1.5rem
+            text-wrap: balance
+        .default
+            border: 1px solid #010101
+            outline: none
+            border-radius: 8px
+            font-size: 1.5rem
+            font-weight: 400
+            width: 100px
+            color: #010101
+            text-align: center
+        .correct
+            outline: none
+            border-radius: 8px
+            font-size: 1.5rem
+            font-weight: 400
+            width: 100px
+            background: #FDCD62
+            color: #010101
+            border: 1px solid #010101
+            text-align: center
+    
