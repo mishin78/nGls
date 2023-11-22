@@ -2,23 +2,23 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 const initialState = {
     value: {
-        count: 0 
+        level: 'A1'
     }
 }
 
-export const count = createSlice({
-    name: 'count',
+export const levels = createSlice({
+    name: 'levels',
     initialState,
     reducers: {
-        plusOne: (state, action) => {
+        changeLevel: (state, action) => {
             return {
                 value: {
-                    count: state.value.count + 1
+                    level: action
                 }
             }
         }
     }
 })
 
-export const { plusOne } = count.actions
-export default count.reducer
+export const { changeLevel } = levels.actions
+export default levels.reducer

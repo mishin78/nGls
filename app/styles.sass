@@ -57,7 +57,6 @@ nav
     width: 100%
     padding: 1rem 2rem 1rem 2rem
     border: 0.5px solid $grey
-    background: #FFFFFF
     .logoBox
         @extend %flex
         gap: 0.5rem
@@ -95,11 +94,13 @@ main
         position: absolute
         top: 300px
         right: 0px
+        z-index: -1000
     h1
         font-weight: 400
         font-style: italic
         font-size: 3rem
         color: #4C4744
+        margin-inline: 2rem
         span
             color: #0f5fbb
             font-weight: 500
@@ -183,44 +184,19 @@ main
             width: 140px
             height: 100px
             margin-inline: 0.5rem
-            border: 1px solid black
+            border: 1px solid #4C4744
             @extend %flex
             cursor: pointer
             border-radius: 8px
+            text-align: center
+            font-size: 0.9rem
+          div:hover
+            border: 1px dashed #0f5fbb
 
         
 
-.grammar
-    background: #FFFFFF
-    .gridBox
-        .easy
-            @extend %flex-column
-        .normal
-            @extend %flex-column
-        .expert
-            @extend %flex-column
-        div
-            font-weight: 500
-        .win
-            background: #00DB73
-            color: #FFFFFF
-            border: none
-        .grey
-            background: #C3B3C5
-            color: #FFFFFF
-            border: none
-        .half-done
-            background: #FFDF00
-            color: $black
-            border: none
-            
 
-.vocabulary
-    .gridBox
-        div
-            border: 3px solid white
 
-.listening
 
 
 
@@ -479,11 +455,29 @@ main
 
 
 
+@media screen and ( max-width: 1325px )
+    main
+        text-align: center
+        .mainBox
+            grid-template-columns: repeat(3, 250px)
+
+    
+
+@media screen and ( max-width: 930px )
+    main
+        h1
+            font-size: 2.5rem
+            text-wrap: balance
+
+@media screen and ( max-width: 865px )
+    main
+        h1
+            font-size: 2rem
+        .mainBox
+            grid-template-columns: repeat(2, 250px)
 
 
-
-
-
-
-
-
+@media screen and ( max-width: 600px )
+    main
+        .mainBox
+            grid-template-columns: repeat(1, 250px)
