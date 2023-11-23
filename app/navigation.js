@@ -2,86 +2,95 @@
 import './styles.sass'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useState } from 'react'
+import { useSearchParams } from 'next/navigation'
 
 
 export default function Navigation() {
-    const [ showGrammar, setShowGrammar ] = useState(false)
-    const [ showVocabulary, setShowVocabulary ] = useState(false)
-    const [ showListening, setShowListening ] = useState(false)
-    const [ showReading, setShowReading ] = useState(false)
-    const [ showEveryday, setShowEveryday ] = useState(false)
-    const [ showWriting, setShowWriting ] = useState(false)
-    const [ showExams, setShowExams ] = useState(false)
 
-    const home = () => {
-        setShowGrammar(false); setShowVocabulary(false); setShowListening(false); setShowReading(false); setShowEveryday(false); setShowWriting(false); setShowExams(false);
-    }
-    const grammar = () => {
-        setShowGrammar(true); setShowVocabulary(false); setShowListening(false); setShowReading(false); setShowEveryday(false); setShowWriting(false); setShowExams(false);
-    }
-    const vocabulary = () => {
-        setShowGrammar(false); setShowVocabulary(true); setShowListening(false); setShowReading(false); setShowEveryday(false); setShowWriting(false); setShowExams(false);
-    }
-    const reading = () => {
-        setShowGrammar(false); setShowVocabulary(false); setShowListening(false); setShowReading(true); setShowEveryday(false); setShowWriting(false); setShowExams(false);
-    }
-    const listening = () => {
-        setShowGrammar(false); setShowVocabulary(false); setShowListening(true); setShowReading(false); setShowEveryday(false); setShowWriting(false); setShowExams(false);
-    }
-    const everyday = () => {
-        setShowGrammar(false); setShowVocabulary(false); setShowListening(false); setShowReading(false); setShowEveryday(true); setShowWriting(false); setShowExams(false);
-    }
-    const writing = () => {
-        setShowGrammar(false); setShowVocabulary(false); setShowListening(false); setShowReading(false); setShowEveryday(false); setShowWriting(true); setShowExams(false);
-    }
-    const exams = () => {
-        setShowGrammar(false); setShowVocabulary(false); setShowListening(false); setShowReading(false); setShowEveryday(false); setShowWriting(false); setShowExams(true);
-    }
+    const searchParams = useSearchParams()
+
+    const search = searchParams.get('section')
+
+    console.log(search)
+
 
     return (
         <nav>
             <Link href='/'>
-                <div onClick={() => home()} className='logoBox'>
+                <div className='logoBox'>
                     <Image className='logo' alt='flag of Germany' src='/german-shepherd.png' width={40} height={40}/>
                     <h6>Nationale Deutschsprachige Schule</h6>
                 </div>
             </Link>
             <div className='sectionsBox'>
 
-            <Link href='/grammar'>
-                <div className='section' onClick={() => grammar()}>
-                    {showGrammar ? <h6 style={{color: '#0070F3'}}>Grammar</h6> : <h6>Grammar</h6>}
+            <Link  
+                href={{
+                    pathname: '/grammar',
+                    query: { section: 'grammar'},
+            }}>
+                <div className='section'>
+                    {search === 'grammar' ? <h6 style={{color: '#0070F3'}}>Grammar</h6> : <h6>Grammar</h6>}
                 </div>
             </Link>
-            <Link href='/vocabulary'>
-                <div className='section' onClick={() => vocabulary()}>
-                    {showVocabulary ? <h6 style={{color: '#0070F3'}}>Vocabulary</h6> : <h6>Vocabulary</h6>}
+            <Link 
+                href={{
+                    pathname: '/vocabulary',
+                    query: { section: 'vocabulary'},
+                  }}
+            >
+                <div className='section'>
+                    {search === 'vocabulary' ? <h6 style={{color: '#0070F3'}}>Vocabulary</h6> : <h6>Vocabulary</h6>}
                 </div>
             </Link>
-            <Link href='/listening'>
-                <div className='section' onClick={() => listening()}>
-                    {showListening ? <h6 style={{color: '#0070F3'}}>Listening</h6> : <h6>Listening</h6>}
+            <Link 
+                href={{
+                    pathname: '/listening',
+                    query: { section: 'listening'},
+                }}
+            >
+                <div className='section'>
+                    {search === 'listening' ? <h6 style={{color: '#0070F3'}}>Listening</h6> : <h6>Listening</h6>}
                 </div>
             </Link>
-            <Link href='/reading'>
-                <div className='section' onClick={() => reading()}>
-                    {showReading ? <h6 style={{color: '#0070F3'}}>Reading</h6> : <h6>Reading</h6>}
+            <Link 
+                href={{
+                    pathname: '/reading',
+                    query: { section: 'reading'},
+                  }}
+            >
+                <div className='section'>
+                    {search === 'reading' ? <h6 style={{color: '#0070F3'}}>Reading</h6> : <h6>Reading</h6>}
                 </div>
             </Link>
-            <Link href='/everyday'>
-                <div className='section' onClick={() => everyday()}>
-                    {showEveryday ? <h6 style={{color: '#0070F3'}}>Use of English</h6> : <h6>Use of English</h6>}
+            <Link 
+                href={{
+                    pathname: '/everyday',
+                    query: { section: 'everyday'},
+                  }}
+            >
+                <div className='section'>
+                    {search === 'everyday' ? <h6 style={{color: '#0070F3'}}>Use of English</h6> : <h6>Use of English</h6>}
                 </div>
             </Link>
-            <Link href='/writing'>
-                <div className='section' onClick={() => writing()}>
-                    {showWriting ? <h6 style={{color: '#0070F3'}}>Writing</h6> : <h6>Writing</h6>}
+            <Link
+                href={{
+                    pathname: '/writing',
+                    query: { section: 'writing'},
+                  }}
+            >
+                <div className='section'>
+                    {search === 'writing' ? <h6 style={{color: '#0070F3'}}>Writing</h6> : <h6>Writing</h6>}
                 </div>
             </Link>
-            <Link href='/exams'>
-                <div className='section' onClick={() => exams()}>
-                    {showExams ? <h6 style={{color: '#0070F3'}}>Exams</h6> : <h6>Exams</h6>}
+            <Link 
+                href={{
+                    pathname: '/exams',
+                    query: { section: 'exams'},
+                  }}
+            >
+                <div className='section'>
+                    {search === 'exams' ? <h6 style={{color: '#0070F3'}}>Exams</h6> : <h6>Exams</h6>}
                 </div>
             </Link>
             </div>

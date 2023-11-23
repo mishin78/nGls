@@ -11,32 +11,67 @@ export default function Home() {
       <h1><span>Національна школа німецької мови.</span><br />
           Наполегливість і бажання - це все що вам потрібно.</h1>
       <div className='mainBox'>
-        <Link href='/grammar'>
+        <Link 
+          href={{
+            pathname: '/grammar',
+            query: { section: 'grammar'},
+           }}
+        >
         <div className='section grammar'>
           <h5>Gra<span>mm</span>ar</h5>
           <Image src='/grammar-v1.svg' height={70} width={70} alt='book' />
         </div></Link>
-        <Link href='/everyday'><div className='section everyday'>
+        <Link 
+          href={{
+            pathname: '/everyday',
+            query: { section: 'everyday'},
+          }}
+        ><div className='section everyday'>
           <h5>Use <span>of</span> English</h5>
           <Image src='/everyday-v1.1.svg' height={70} width={70} alt='book' />
         </div></Link>
-        <Link href='/listening'><div className='section listening'>
+        <Link
+          href={{
+              pathname: '/listening',
+              query: { section: 'listening'},
+            }}
+        ><div className='section listening'>
           <h5>Listening</h5>
           <Image src='./listen-v1.svg' width={70} height={70} alt='picture of red headphones' />
         </div></Link>
-        <Link href='/writing'><div className='section writing'>
+        <Link
+          href={{
+              pathname: '/writing',
+              query: { section: 'writing'},
+            }}
+        ><div className='section writing'>
           <h5>Writing</h5>
           <Image src='/write-v1.2.svg' height={70} width={70} alt='pen' />
         </div></Link>
-        <Link href='/reading'><div className='section reading'>
+        <Link
+          href={{
+              pathname: '/reading',
+              query: { section: 'reading'},
+            }}
+        ><div className='section reading'>
           <h5>Reading</h5>
           <Image src='/read-v1.svg' height={70} width={70} alt='book' />
         </div></Link>
-        <Link href='/vocabulary'><div className='section vocabulary'>
+        <Link
+          href={{
+              pathname: '/vocabulary',
+              query: { section: 'vocabulary'},
+            }}
+        ><div className='section vocabulary'>
           <Image src='/vocabulary-v1.1.svg' height={70} width={70} alt='book' />
           <h5>Vocabulary</h5>
         </div></Link>
-        <Link href='/exams'><div className='section exams'>
+        <Link
+          href={{
+              pathname: '/exams',
+              query: { section: 'exams'},
+            }}
+        ><div className='section exams'>
           <h5>Exams</h5>
           <Image src='/exams-v1.svg' height={70} width={70} alt='book' />
         </div></Link>
