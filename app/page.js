@@ -13,8 +13,8 @@ export default function Home() {
       <div className='mainBox'>
         <Link 
           href={{
-            pathname: '/grammar',
-            query: { section: 'grammar'},
+            pathname: '/grammar/A1',
+            query: { section: 'grammar', level: 'A1'},
            }}
         >
         <div className='section grammar'>

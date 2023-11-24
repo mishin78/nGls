@@ -1,0 +1,261 @@
+%flex-column
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+
+%flex
+    display: flex
+    justify-content: center
+    align-items: center
+    
+    
+.nomen
+    padding: 2rem
+    @extend %flex-column
+    color: #4C4744
+    h1
+        font-size: 2rem
+        margin: 1rem
+    h6
+        font-size: 1.6rem
+        font-weight: 400
+    .test1
+        margin: 2rem
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        gap: 1rem
+        div
+            @extend %flex
+            justify-content: flex-start
+            p
+                line-height: 2
+                font-size: 1.5rem
+            .derDiDas
+                user-select: none
+                display: inline-block
+                position: relative
+                border-radius: 8px
+                border: none
+                width: 80px
+                margin-inline: 0.5rem
+                color: #FFFFFF
+                background: #BD5FFF
+                .input
+                    @extend %flex
+                    justify-content: flex-start
+                    width: 80px
+                    height: 40px
+                    border: none
+                    border-radius: 8px
+                    text-align: center
+                    position: relative
+                    img
+                        display: none
+                    .correct
+                        color: #FFFFFF
+                        background: #BD5FFF
+                        margin-left: 10px
+                        font-weight: 400
+                        font-size: 1.5rem
+                .openedModule
+                        display: grid
+                        justify-content: center
+                        position: absolute
+                        width: 80px
+                        right: 0px
+                        border-radius: 8px
+                        background: #FFFFFF
+                        color: #4C4744
+                        border: 1px solid #EDD1FF
+                        z-index: 1000
+                        h4
+                            font-size: 1rem
+                            font-weight: 400
+                            cursor: pointer
+                            padding: 0.5rem
+                            width: 80px
+                            text-align: center
+                            border-radius: 8px
+                        h4:hover
+                            color: #FFFFFF
+                            background: #BD5FFF
+                .hiddenModule
+                        display: none
+            .derDiDasDefault
+                user-select: none
+                display: inline-block
+                position: relative
+                background: #FFFFFF
+                border-radius: 8px
+                width: 80px
+                margin-inline: 0.5rem
+                .input
+                    @extend %flex
+                    justify-content: flex-start
+                    width: 80px
+                    height: 40px
+                    border: 1px solid #EDD1FF
+                    border-radius: 8px
+                    text-align: start
+                    position: relative
+                    .default
+                        margin-left: 10px
+                        font-weight: 400
+                        font-size: 1.5rem
+                    .wrong
+                        text-decoration: line-through
+                        margin-left: 10px
+                        font-weight: 400
+                        font-size: 1.5rem
+                    .open
+                        position: absolute
+                        right: 0px
+                        transform: rotate(180deg)
+                    .closed
+                        position: absolute
+                        right: 0px
+                .openedModule
+                    display: grid
+                    justify-content: center
+                    position: absolute
+                    width: 80px
+                    right: 0px
+                    border-radius: 8px
+                    background: #FFFFFF
+                    border: 1px solid #EDD1FF
+                    z-index: 1000
+                    h4
+                        font-size: 1rem
+                        font-weight: 400
+                        cursor: pointer
+                        padding: 0.5rem
+                        width: 80px
+                        text-align: center
+                        border-radius: 8px
+                    h4:hover
+                        color: #FFFFFF
+                        background: #BD5FFF
+                .hiddenModule
+                    display: none
+    .test2
+        margin: 2rem
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        gap: 1rem
+        p
+            line-height: 2
+            font-size: 1.5rem
+        div
+            @extend %flex
+            justify-content: flex-start
+            p
+                line-height: 2
+                font-size: 1.5rem
+            .derDiDas
+                user-select: none
+                display: inline-block
+                position: relative
+                border-radius: 8px
+                border: none
+                width: 80px
+                margin-inline: 0.5rem
+                color: #FFFFFF
+                background: #BD5FFF
+                .input
+                    @extend %flex
+                    justify-content: flex-start
+                    width: 80px
+                    height: 40px
+                    border: none
+                    border-radius: 8px
+                    text-align: center
+                    position: relative
+                    img
+                        display: none
+                    .correct
+                        color: #FFFFFF
+                        background: #BD5FFF
+                        margin-left: 10px
+                        font-weight: 400
+                        font-size: 1.5rem
+                .openedModule
+                        display: grid
+                        justify-content: center
+                        position: absolute
+                        width: 80px
+                        right: 0px
+                        border-radius: 8px
+                        background: #FFFFFF
+                        color: #4C4744
+                        border: 1px solid #EDD1FF
+                        z-index: 1000
+                        h4
+                            font-size: 1rem
+                            font-weight: 400
+                            cursor: pointer
+                            padding: 0.5rem
+                            width: 80px
+                            text-align: center
+                            border-radius: 8px
+                        h4:hover
+                            color: #FFFFFF
+                            background: #BD5FFF
+                .hiddenModule
+                        display: none
+            .derDiDasDefault
+                user-select: none
+                display: inline-block
+                position: relative
+                background: #FFFFFF
+                border-radius: 8px
+                width: 80px
+                margin-inline: 0.5rem
+                .input
+                    @extend %flex
+                    justify-content: flex-start
+                    width: 80px
+                    height: 40px
+                    border: 1px solid #EDD1FF
+                    border-radius: 8px
+                    text-align: start
+                    position: relative
+                    .default
+                        margin-left: 10px
+                        font-weight: 400
+                        font-size: 1.5rem
+                    .wrong
+                        text-decoration: line-through
+                        margin-left: 10px
+                        font-weight: 400
+                        font-size: 1.5rem
+                    .open
+                        position: absolute
+                        right: 0px
+                        transform: rotate(180deg)
+                    .closed
+                        position: absolute
+                        right: 0px
+                .openedModule
+                    display: grid
+                    justify-content: center
+                    position: absolute
+                    width: 80px
+                    right: 0px
+                    border-radius: 8px
+                    background: #FFFFFF
+                    border: 1px solid #EDD1FF
+                    z-index: 1000
+                    h4
+                        font-size: 1rem
+                        font-weight: 400
+                        cursor: pointer
+                        padding: 0.5rem
+                        width: 80px
+                        text-align: center
+                        border-radius: 8px
+                    h4:hover
+                        color: #FFFFFF
+                        background: #BD5FFF
+                .hiddenModule
+                    display: none

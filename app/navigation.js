@@ -8,11 +8,7 @@ import { useSearchParams } from 'next/navigation'
 export default function Navigation() {
 
     const searchParams = useSearchParams()
-
     const search = searchParams.get('section')
-
-    console.log(search)
-
 
     return (
         <nav>
@@ -26,8 +22,8 @@ export default function Navigation() {
 
             <Link  
                 href={{
-                    pathname: '/grammar',
-                    query: { section: 'grammar'},
+                    pathname: '/grammar/A1',
+                    query: { section: 'grammar', level: 'A1'},
             }}>
                 <div className='section'>
                     {search === 'grammar' ? <h6 style={{color: '#0070F3'}}>Grammar</h6> : <h6>Grammar</h6>}

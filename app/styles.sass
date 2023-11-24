@@ -166,6 +166,16 @@ main
             border: 1px solid #e5e7eb
         h3:hover
             border: 1px dashed #0070F3
+        .currentLevel
+            color: #FFFFFF
+            font-weight: 500
+            background: #0070F3
+            padding: 0.4rem 0.8rem
+            border-radius: 8px
+            font-size: 1rem
+            border: 1px solid #e5e7eb
+        .currentLevel:hover
+            border: 1px solid #e5e7eb
         span
             width: 50px
             font-weight: 200
@@ -195,263 +205,25 @@ main
 
         
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.mainGrammar
-    background-color: #8BC6EC
-    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%)
-
-
-.test
-    user-select: none
-    @extend %flex-column
-    align-items: flex-start
-    gap: 1.5rem
-    .box
-        @extend %flex
-        h6
-            font-size: 1.5rem
+.A1
+    .exercises
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        gap: 1rem
+        a
             color: #4C4744
-            padding: 0.5rem 0.9rem
-            border-radius: 50%
-            margin-inline: 1rem
-        p
-            font-size: 1.3rem
-            font-weight: 400
-        .selectBox
-                @extend %flex
-                justify-content: space-between
-                padding-inline: 0.2rem
-                width: 200px
-                height: 42px
-                border: 1px solid #D1D5DB
-                background: #FFFFFF
-                border-radius: 8px
-                position: relative
-                margin-inline: 0.5rem
-                .down
-                    display: block
-                .up
-                    transform: rotate(180deg)
-                .wrong
-                    padding-left: 1rem
-                    font-size: 1.3rem
-                    text-decoration: line-through
-                    font-weight: 400
-                .correct
-                    padding-left: 1rem
-                    font-size: 1.3rem
-                    color: #22C55D
-                    font-weight: 400
-                .hidden
-                    position: absolute
-                    top: 43px
-                    left: 0px
-                    width: 200px
-                    @extend %flex-column
-                    padding: 0.5rem
-                    background: #FFFFFF
-                    border: 1px solid #D1D5DB
-                    border-radius: 8px
-                    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 14px
-                    z-index: 100
-                    button
-                        background: #FFFFFF
-                        border: none
-                        font-size: 1.3rem
-                        margin: 0.4rem
-                        padding: 1rem
-                        border-radius: 8px
-                        width: 90%
-                        cursor: pointer
-                    button:hover
-                        background: #F3F4F6
-        .selectBox:hover
-                border: 1px solid black
-        .selectBox:active
-                background: #F3F4F6
-        .selectBoxCorrect
-                @extend %flex
-                justify-content: space-between
-                padding-inline: 0.2rem
-                width: 200px
-                height: 42px
-                border: 1px solid #D1D5DB
-                background: #DCFCE7
-                border-radius: 8px
-                position: relative
-                margin-inline: 0.5rem
-                .down
-                    display: block
-                .up
-                    transform: rotate(180deg)
-                .wrong
-                    padding-left: 1rem
-                    font-size: 1.3rem
-                    text-decoration: line-through
-                    font-weight: 400
-                .correct
-                    padding-left: 1rem
-                    font-size: 1.3rem
-                    color: #22C55D
-                    font-weight: 400
-                .hidden
-                    position: absolute
-                    top: 43px
-                    left: 0px
-                    width: 200px
-                    @extend %flex-column
-                    padding: 0.5rem
-                    background: #FFFFFF
-                    border: 1px solid #D1D5DB
-                    border-radius: 8px
-                    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 14px
-                    z-index: 100
-                    button
-                        background: #FFFFFF
-                        border: none
-                        font-size: 1.3rem
-                        margin: 0.4rem
-                        padding: 1rem
-                        border-radius: 8px
-                        width: 90%
-                        cursor: pointer
-                    button:hover
-                        background: #F3F4F6
-
-
-                
-
-        
-.test2
-    @extend %flex-column
-    align-items: flex-start
-    gap: 1.5rem
-    .testbox
-        @extend %flex-column
-        align-items: flex-start
-        gap: 0.5rem
-        .qBox
+        .box
+            width: 140px
+            height: 100px
+            margin-inline: 0.5rem
+            border: 1px solid #4C4744
             @extend %flex
-            gap: 0.5rem
-            p
-                font-size: 1.2rem
-            h6
-                background: $cola-red
-                font-size: 1.3rem
-                color: #FFFFFF
-                padding: 0.5rem 0.9rem
-                border-radius: 50%
-        .vBox
-            @extend %flex
-            gap: 0.5rem
-            align-self: flex-start
-            h6
-                font-size: 1.2rem
-                font-weight: 400
-            button
-                background: #FFFFFF
-                padding: 0.4rem 1rem
-                width: 150px
-                border: 1px solid #D1D5DB
-                font-size: 1rem
-                border-radius: 8px
-                cursor: pointer
-            button:hover
-                border: 1px solid black
-            button:active
-                background: #F3F4F6
-
-            
-.video
-    iframe
-        border: none
-        border-radius: 9px
-        width: 600px
-        aspect-ratio: 16/9
-
-
-.grammarElementary
-    .box
-        @extend %flex
-        justify-content: space-between
-        padding-inline: 0.2rem
-        width: 200px
-        height: 42px
-        border: 1px solid #D1D5DB
-        background: #FFFFFF
-        border-radius: 8px
-        margin-inline: 0.5rem
-        display: inline
-    p
-        font-size: 1rem
-        margin-inline: 3rem
-    .sel
-        width: 200px
-        height: 35px
-        display: inline-block
-        font-size: 1rem
-        margin-inline: 0.5rem
-        border-radius: 8px
-
-
-
-        
-        
-
-.selectBox
-    @extend %flex-column
-    width: 200px
-    height: 35px
-    border: 1px solid #D1D5DB
-    border-radius: 8px
-    display: inline-block
-    margin: 1rem 0.5rem
-    position: relative
-    .value
-        @extend %flex
-        justify-content: space-between
-        justify-self: center
-        padding: 1rem
-        h5
-            font-size: 1rem
-    .hidden
-        @extend %flex-column
-        width: 200px
-        border: 1px solid #D1D5DB
-        position: absolute
-        background: white
-        button
-            border: none
-            font-size: 1rem
-        
-
+            cursor: pointer
+            border-radius: 8px
+            text-align: center
+            font-size: 0.9rem
+        .box:hover
+            border: 1px dashed #0f5fbb
 
 
 
