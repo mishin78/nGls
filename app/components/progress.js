@@ -18,7 +18,7 @@ export default function ProgressBar({ value, value1, value2, value3, value4, val
                 <div className={value9 === 'st' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
                 <div className={value10 === 'st' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
                 <div className={value11 === 'en' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
-                <div className={value12 === 'e' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
+                <div className={value12 === 'st' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
                 <div className={value13 === 'en' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
                 <div className={value14 === 'e' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
                 <div className={value15 === 'st' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>

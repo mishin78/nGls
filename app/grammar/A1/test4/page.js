@@ -70,10 +70,10 @@ export default function Perfekt({ searchParams }) {
                 <div>
                     <div className='words'>
                         <p>machen — <InputTest3 correctWord={'gemacht'}/></p>
-                        <p>sehen — <InputTest3 correctWord={'hat gesehen'}/></p>
+                        <p>sehen — <InputTest3 correctWord={'gesehen'}/></p>
                         <p>gehen — <InputTest3 correctWord={'gegangen'}/></p>
-                        <p>fahren — <InputTest3 correctWord={'hat gefahren'}/></p>
-                        <p>schlafen — <InputTest3 correctWord={'hat geschlafen'}/></p>
+                        <p>fahren — <InputTest3 correctWord={'gefahren'}/></p>
+                        <p>schlafen — <InputTest3 correctWord={'geschlafen'}/></p>
                         <p>kommen — <InputTest3 correctWord={'gekommen'}/></p>
                         <p>frühstücken —  <InputTest3 correctWord={'gefrühstückt'}/></p>
                         <p>spazieren gehen — <InputTest3 correctWord={'spazieren gegangen'}/></p>
