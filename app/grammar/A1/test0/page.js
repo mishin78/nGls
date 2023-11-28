@@ -45,6 +45,10 @@ export default function Task0() {
     const [ value36, setValue36 ] = useState('')
     const [ value37, setValue37 ] = useState('')
     const [ value38, setValue38 ] = useState('')
+    const [ value39, setValue39 ] = useState('')
+    const [ value40, setValue40 ] = useState('')
+
+
 
     return (
         <div className="grammar elementary task0">
@@ -52,7 +56,11 @@ export default function Task0() {
                 <Examples />
                 <ProgressBar value={value} value1={value1} value2={value2} value3={value3} value4={value4} value5={value5}
                              value6={value6} value7={value7} value8={value8} value9={value9} value10={value10} value11={value11}
-                             value12={value12} value13={value13} value14={value14} value15={value15} value16={value16} value17={value17}/>
+                             value12={value12} value13={value13} value14={value14} value15={value15} value16={value16} value17={value17}
+                             value18={value18} value19={value19} value20={value20} value21={value21} value22={value22} value23={value23}
+                             value24={value24} value25={value25} value26={value26} value27={value27} value28={value28} value29={value29}
+                             value30={value30} value31={value31} value32={value32} value33={value33} value34={value34} value35={value35}
+                             value36={value36} value37={value37} value38={value38} value39={value39} value40={value40} />
             </div>
             <div className="text">
                 <h1>Konjugation  im  Präsens</h1>
@@ -80,43 +88,37 @@ export default function Task0() {
 
 
                 <div className="part2">
-                    <p>
-                            
-                        Lern__(en) Sie  Deutsch ? 🧓🏽     ( Lernst du  Deutsch)? 🧑🏼‍🦱
-                        (Wo wohnen Sie)? 👵🏻               Wo wohn___(st) du ? 👧🏻
-                        Was mach__(en) Sie  gern ? 👴🏼    ( Was machst du gern) ? 👦🏼
-                    </p>
                     <h2>Übung 2</h2>
-                    <h6>Schreiben Sie Fragen mit Sie und du. </h6>
+                    <h2>Schreiben Sie Fragen mit Sie und du. </h2>
                     <div>
-                        <p>Woher kommen Sie ? 👵🏼</p>
+                        <p>1 Woher kommen Sie ? 👵🏼</p>
                         <p>Woher kommst du? 👧🏼</p>
                     </div>
                     <div>
-                        <p>Wie heiß__(en) Sie ? 👩🏼‍🦳</p>
+                        <p>2 Wie heiß<input className={value11 === 'en' ? 'right' : 'wrong'} value={value11} onChange={e => setValue11(e.target.value)}/> Sie ? 👩🏼‍🦳</p>
                         <div><input className={value38 === 'Wie heißst du' ? 'right' : 'wrong'} value={value38} onChange={e => setValue38(e.target.value)}/><p>? 👱🏼‍♀️</p></div>
                     </div>
                     <div>
-                        <div><input className={value38 === 'Kommen Sie aus Polen' ? 'right' : 'wrong'} value={value38} onChange={e => setValue38(e.target.value)}/><p>? 👨🏼‍🦳</p></div>
-                        <p>Komm__(st) du  aus Polen ? 🧑🏽</p>
+                        <div>3 <input className={value12 === 'Kommen Sie aus Polen' ? 'right' : 'wrong'} value={value12} onChange={e => setValue12(e.target.value)}/><p>? 👨🏼‍🦳</p></div>
+                        <p>Komm<input className={value13 === 'st' ? 'right' : 'wrong'} value={value13} onChange={e => setValue13(e.target.value)}/> du  aus Polen ? 🧑🏽</p>
                     </div>
                     <div>
-                        <p></p>
-                        <div><input className={value38 === 'Wie heißst du' ? 'right' : 'wrong'} value={value38} onChange={e => setValue38(e.target.value)}/><p></p></div>
+                        <p>4 Lern<input className={value14 === 'en' ? 'right' : 'wrong'} value={value14} onChange={e => setValue14(e.target.value)}/> Sie  Deutsch ? 🧓🏽</p>
+                        <div><input className={value15 === 'Lernst du  Deutsch' ? 'right' : 'wrong'} value={value15} onChange={e => setValue15(e.target.value)}/><p>? 🧑🏼‍🦱</p></div>
                     </div>
                     <div>
-                        <div><input className={value38 === 'Wie heißst du' ? 'right' : 'wrong'} value={value38} onChange={e => setValue38(e.target.value)}/><p></p></div>
-                        <p></p>
+                        <div>5 <input className={value16 === 'Wo wohnen Sie' ? 'right' : 'wrong'} value={value16} onChange={e => setValue16(e.target.value)}/><p>? 👵🏻</p></div>
+                        <p>Wo wohn<input className={value17 === 'st' ? 'right' : 'wrong'} value={value17} onChange={e => setValue17(e.target.value)}/> du ? 👧🏻</p>
                     </div>
                     <div>
-                        <p></p>
-                        <div><input className={value38 === 'Wie heißst du' ? 'right' : 'wrong'} value={value38} onChange={e => setValue38(e.target.value)}/><p></p></div>
+                        <p>6 Was mach<input className={value39 === 'en' ? 'right' : 'wrong'} value={value39} onChange={e => setValue39(e.target.value)}/> Sie  gern ? 👴🏼</p>
+                        <div><input className={value40 === 'Was machst du gern' ? 'right' : 'wrong'} value={value40} onChange={e => setValue40(e.target.value)}/><p>? 👦🏼</p></div>
                     </div>
-                   
                 </div>
 
 
                 <div className="part3">
+                    <h2>Übung 3</h2>
                     <div>
                         <p>👩🏽‍🦱 Mark, was  mach<input className={value26 === 'st' ? 'right' : 'wrong'} value={value26} onChange={e => setValue26(e.target.value)}/> du gern ?</p>
                         <p>👨🏼‍🦰 Ich  spiel<input className={value27 === 'e' ? 'right' : 'wrong'} value={value27} onChange={e => setValue27(e.target.value)}/> gern Schach. ♟️ Und du? Was  mach<input className={value28 === 'st' ? 'right' : 'wrong'} value={value28} onChange={e => setValue28(e.target.value)}/> du gern ?</p>
