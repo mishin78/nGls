@@ -8,7 +8,6 @@ export default function Levels() {
     const searchParams = useSearchParams()
     const section = searchParams.get('section')
     const level = searchParams.get('level')
-    console.log(level)
 
     return (
         <div className='levelsBox'>
