@@ -18,17 +18,8 @@ export default function Home() {
            }}
         >
         <div className='section grammar'>
-          <h5>Gra<span>mm</span>ar</h5>
+          <h5>Grammatik</h5>
           <Image src='/grammar-v1.svg' height={70} width={70} alt='book' />
-        </div></Link>
-        <Link 
-          href={{
-            pathname: '/everyday',
-            query: { section: 'everyday'},
-          }}
-        ><div className='section everyday'>
-          <h5>Use <span>of</span> English</h5>
-          <Image src='/everyday-v1.1.svg' height={70} width={70} alt='book' />
         </div></Link>
         <Link
           href={{
@@ -36,7 +27,7 @@ export default function Home() {
               query: { section: 'listening'},
             }}
         ><div className='section listening'>
-          <h5>Listening</h5>
+          <h5>Zuhören</h5>
           <Image src='./listen-v1.svg' width={70} height={70} alt='picture of red headphones' />
         </div></Link>
         <Link
@@ -45,7 +36,7 @@ export default function Home() {
               query: { section: 'writing'},
             }}
         ><div className='section writing'>
-          <h5>Writing</h5>
+          <h5>Schreiben</h5>
           <Image src='/write-v1.2.svg' height={70} width={70} alt='pen' />
         </div></Link>
         <Link
@@ -54,7 +45,7 @@ export default function Home() {
               query: { section: 'reading'},
             }}
         ><div className='section reading'>
-          <h5>Reading</h5>
+          <h5>Lesen</h5>
           <Image src='/read-v1.svg' height={70} width={70} alt='book' />
         </div></Link>
         <Link
@@ -64,7 +55,7 @@ export default function Home() {
             }}
         ><div className='section vocabulary'>
           <Image src='/vocabulary-v1.1.svg' height={70} width={70} alt='book' />
-          <h5>Vocabulary</h5>
+          <h5>Wortschatz</h5>
         </div></Link>
         <Link
           href={{
@@ -72,7 +63,7 @@ export default function Home() {
               query: { section: 'exams'},
             }}
         ><div className='section exams'>
-          <h5>Exams</h5>
+          <h5>Prüfungen</h5>
           <Image src='/exams-v1.svg' height={70} width={70} alt='book' />
         </div></Link>
       </div>

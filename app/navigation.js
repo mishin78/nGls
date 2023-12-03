@@ -26,7 +26,7 @@ export default function Navigation() {
                     query: { section: 'grammar', level: 'A1'},
             }}>
                 <div className='section'>
-                    {search === 'grammar' ? <h6 style={{color: '#0070F3'}}>Grammar</h6> : <h6>Grammar</h6>}
+                    {search === 'grammar' ? <h6 style={{color: '#0070F3'}}>Grammatik</h6> : <h6>Grammatik</h6>}
                 </div>
             </Link>
             <Link 
@@ -36,7 +36,7 @@ export default function Navigation() {
                   }}
             >
                 <div className='section'>
-                    {search === 'vocabulary' ? <h6 style={{color: '#0070F3'}}>Vocabulary</h6> : <h6>Vocabulary</h6>}
+                    {search === 'vocabulary' ? <h6 style={{color: '#0070F3'}}>Wortschatz</h6> : <h6>Wortschatz</h6>}
                 </div>
             </Link>
             <Link 
@@ -46,7 +46,7 @@ export default function Navigation() {
                 }}
             >
                 <div className='section'>
-                    {search === 'listening' ? <h6 style={{color: '#0070F3'}}>Listening</h6> : <h6>Listening</h6>}
+                    {search === 'listening' ? <h6 style={{color: '#0070F3'}}>Zuhören</h6> : <h6>Zuhören</h6>}
                 </div>
             </Link>
             <Link 
@@ -56,17 +56,7 @@ export default function Navigation() {
                   }}
             >
                 <div className='section'>
-                    {search === 'reading' ? <h6 style={{color: '#0070F3'}}>Reading</h6> : <h6>Reading</h6>}
-                </div>
-            </Link>
-            <Link 
-                href={{
-                    pathname: '/everyday',
-                    query: { section: 'everyday'},
-                  }}
-            >
-                <div className='section'>
-                    {search === 'everyday' ? <h6 style={{color: '#0070F3'}}>Use of English</h6> : <h6>Use of English</h6>}
+                    {search === 'reading' ? <h6 style={{color: '#0070F3'}}>Lesen</h6> : <h6>Lesen</h6>}
                 </div>
             </Link>
             <Link
@@ -76,7 +66,7 @@ export default function Navigation() {
                   }}
             >
                 <div className='section'>
-                    {search === 'writing' ? <h6 style={{color: '#0070F3'}}>Writing</h6> : <h6>Writing</h6>}
+                    {search === 'writing' ? <h6 style={{color: '#0070F3'}}>Schreiben</h6> : <h6>Schreiben</h6>}
                 </div>
             </Link>
             <Link 
@@ -86,7 +76,7 @@ export default function Navigation() {
                   }}
             >
                 <div className='section'>
-                    {search === 'exams' ? <h6 style={{color: '#0070F3'}}>Exams</h6> : <h6>Exams</h6>}
+                    {search === 'exams' ? <h6 style={{color: '#0070F3'}}>Prüfungen</h6> : <h6>Prüfungen</h6>}
                 </div>
             </Link>
             </div>
