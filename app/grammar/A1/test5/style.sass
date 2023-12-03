@@ -1,13 +1,28 @@
+%flex-column
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+
+%flex
+    display: flex
+    justify-content: center
+    align-items: center
+    
 .habenseinBox
     padding: 4rem
     display: flex
     flex-direction: column
     justify-content: center
-    align-items: center
+    align-items: flex-start
     gap: 3rem
     color: #4C4744
+    width: 900px
     h1
         font-size: 2rem
+        align-self: center
+    img
+        align-self: center
     .test
         //align-self: flex-start
         display: flex
@@ -18,10 +33,139 @@
         h2
             font-size: 1.8rem
             font-weight: 400
-        p
-            font-size: 1.5rem
-            line-height: 1.6666
-            font-weight: 400
+        div
+            p
+                font-size: 1.5rem
+                line-height: 1.6666
+                font-weight: 400
+            .default
+                border: 1px solid #4C4744
+                outline: none
+                border-radius: 8px
+                font-size: 1.5rem
+                font-weight: 400
+                width: 110px
+                color: #4C4744
+                text-align: center
+            .correct
+                outline: none
+                border-radius: 8px
+                font-size: 1.5rem
+                font-weight: 400
+                width: 110px
+                background: #F26E3F
+                color: #FFFFFF
+                border: 1px solid #F26E3F
+                text-align: center
+            .seinHabenSelectCorrect
+                user-select: none
+                display: inline-block
+                position: relative
+                background: #F26E3F
+                border: 1px solid #4C4744
+                border-radius: 8px
+                border: none
+                width: 100px
+                margin: 0.5rem
+                .input
+                    @extend %flex
+                    width: 100px
+                    height: 40px
+                    border: none
+                    position: relative
+                    .correct
+                        color: white
+                        font-weight: 400
+                        font-size: 1.5rem
+                        margin: 0
+                        padding: 0 0.2rem 0 0
+                    .open
+                        position: absolute
+                        right: 4px
+                        transform: rotate(180deg)
+                    .closed
+                        position: absolute
+                        right: 4px
+                .openedModule
+                    display: grid
+                    justify-content: center
+                    position: absolute
+                    width: 100px
+                    right: 0px
+                    border-radius: 8px
+                    background: #FFFFFF
+                    border: 1px solid #4C4744
+                    z-index: 1000
+                    h4
+                        font-size: 1rem
+                        font-weight: 400
+                        cursor: pointer
+                        padding: 0.5rem
+                        width: 100px
+                        text-align: center
+                        border-radius: 8px
+                    h4:hover
+                        background: #F26E3F
+                        color: white
+                .hiddenModule
+                    display: none
+            .seinHabenSelect
+                user-select: none
+                display: inline-block
+                position: relative
+                background: #FFFFFF
+                width: 100px
+                margin: 0.5rem
+                border: 1px solid #4C4744
+                border-radius: 8px
+                .input
+                    @extend %flex
+                    width: 100px
+                    height: 40px
+                    border: none
+                    position: relative
+                    .default
+                        font-weight: 400
+                        border: none
+                        font-size: 1.5rem
+                        margin: 0
+                        padding: 0 0.2rem 0 0
+                    .wrong
+                        text-decoration: line-through
+                        font-weight: 400
+                        font-size: 1.5rem
+                        margin: 0
+                        padding: 0 0.2rem 0 0
+                    .open
+                        position: absolute
+                        right: 4px
+                        transform: rotate(180deg)
+                    .closed
+                        position: absolute
+                        right: 4px
+                .openedModule
+                    display: grid
+                    justify-content: center
+                    position: absolute
+                    width: 100px
+                    right: 0px
+                    border-radius: 8px
+                    background: #FFFFFF
+                    border: 1px solid #4C4744
+                    z-index: 1000
+                    h4
+                        font-size: 1rem
+                        font-weight: 400
+                        cursor: pointer
+                        padding: 0.5rem
+                        width: 100px
+                        text-align: center
+                        border-radius: 8px
+                    h4:hover
+                        background: #F26E3F
+                        color: white
+                .hiddenModule
+                    display: none
     .text
         align-self: flex-start
         display: flex
@@ -36,3 +180,22 @@
             font-size: 1.5rem
             line-height: 1.6666
             font-weight: 400
+        .default
+            border: 1px solid #4C4744
+            outline: none
+            border-radius: 8px
+            font-size: 1.5rem
+            font-weight: 400
+            width: 110px
+            color: #4C4744
+            text-align: center
+        .correct
+            outline: none
+            border-radius: 8px
+            font-size: 1.5rem
+            font-weight: 400
+            width: 110px
+            background: #F26E3F
+            color: #FFFFFF
+            border: 1px solid #F26E3F
+            text-align: center
