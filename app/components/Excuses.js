@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-export const Excuses = () => {
+export default function Excuses() {
     return (
         <div className="excuses">
             <h1>Section is not ready because we probably playing with this one</h1>

@@ -2,7 +2,7 @@ import '../styles.sass'
 import '../grid.sass'
 import Link from 'next/link'
 import Levels from '../components/levels'
-import { Excuses } from '../components/excuses'
+import Excuses from "@/app/components/Excuses"
 
 export default function Vocabulary() {
 

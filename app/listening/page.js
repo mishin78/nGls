@@ -1,6 +1,5 @@
 import '../styles.sass'
-import { Excuses } from '../components/excuses'
-
+import Excuses from "@/app/components/Excuses"
 
 export default function Listening() {
 
