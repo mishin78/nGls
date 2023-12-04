@@ -86,7 +86,7 @@ main
     justify-content: flex-start
     width: 100%
     height: 100vh
-    margin-top: 2rem
+    margin: 2rem auto
     gap: 2.5rem
     .cloud0
         position: absolute
@@ -235,8 +235,10 @@ main
     align-items: center
     flex-direction: column
     padding: 2rem
+    text-align: center
     h1
         font-size: 2rem
+        text-wrap: balance
     img
         margin-top: 3rem
         border-radius: 1rem
@@ -258,14 +260,12 @@ main
     border: 1px solid #22C55D
 
 
-@media screen and ( max-width: 1325px )
-    main
-        text-align: center
-        .mainBox
-            grid-template-columns: repeat(3, 250px)
 
     
 @media screen and ( max-width: 1150px )
+    main
+        .mainBox
+            grid-template-columns: repeat(2, 300px)
     nav
         position: relative
         .sectionsBox
@@ -300,6 +300,7 @@ main
                 margin: 0 0 3px 0
             .last
                 margin: 3px 0 0 0 
+    
 
 @media screen and ( max-width: 930px )
     main
@@ -311,11 +312,26 @@ main
     main
         h1
             font-size: 2rem
-        .mainBox
-            grid-template-columns: repeat(2, 250px)
+        
 
 
-@media screen and ( max-width: 600px )
+@media screen and ( max-width: 700px )
     main
         .mainBox
-            grid-template-columns: repeat(1, 250px)
+            grid-template-columns: repeat(1, 300px)
+
+@media screen and ( max-width: 621px )
+    .excuses
+        h1
+            font-size: 1.5rem
+
+@media screen and ( max-width: 562px )
+    .excuses
+        img
+            width: 342.85px
+            height: 457.14px
+
+@media screen and ( max-width: 504px )
+    .excuses
+        h1
+            font-size: 1rem
