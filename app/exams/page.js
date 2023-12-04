@@ -1,11 +1,11 @@
 import '../styles.sass'
+import { Excuses } from '../components/Excuses'
 
 export default function Exams() {
 
     return (
         <main>
-            <h1>Exams</h1>
-
+            <Excuses />
         </main>
     )
 }

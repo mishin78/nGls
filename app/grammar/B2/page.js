@@ -7,41 +7,41 @@ export default function Preintermediate() {
         <main className="сategory grammar A1">
         <Levels />
         <div className="exercises">
-            <Link href='/grammar/A1/test0' className="box">
-                <div>Konjugation im Präsens</div>
+        <Link href='/grammar/A1/test0' className="box">
+                <div>Empty box</div>
             </Link>
             <Link href='/grammar/A1/test1' className="box">
-                <div>Verben mit Vokalwechsel</div>
+                <div>Empty box</div>
             </Link>
             <Link href='/grammar/A1/test2' className="box">
-                <div>Verben mit Akkusativ</div>
+                <div>Empty box</div>
             </Link>
             <Link href='/grammar/A1/test3' className="box">
-                <div>Trennbare Verben</div>
+                <div>Empty box</div>
             </Link>
             <Link href='/grammar/A1/test4' className="box">
-                <div>Perfekt</div>
+                <div>Empty box</div>
             </Link>
             <Link href='/grammar/A1/test1' className="box">
-                <div>nothing</div>
+                <div>Empty box</div>
             </Link>
             <Link href='/grammar/A1/test1' className="box">
-                <div>nothing</div>
+                <div>Empty box</div>
             </Link>
             <Link href='/grammar/A1/test1' className="box">
-                <div>nothing</div>
+                <div>Empty box</div>
             </Link>
             <Link href='/grammar/A1/test1' className="box">
-                <div>nothing</div>
+                <div>Empty box</div>
             </Link>
             <Link href='/grammar/A1/test1' className="box">
-                <div>nothing</div>
+                <div>Empty box</div>
             </Link>
             <Link href='/grammar/A1/test1' className="box">
-                <div>nothing</div>
+                <div>Empty box</div>
             </Link>
             <Link href='/grammar/A1/test1' className="box">
-                <div>nothing</div>
+                <div>Empty box</div>
             </Link>
         </div>
     </main>

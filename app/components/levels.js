@@ -24,7 +24,7 @@ export default function Levels() {
             </Link>
             <span></span>
             <Link href={{ pathname: `/${section}/B2`, query: { section: `${section}`, level: 'B2'}}}>
-                <h3 className='lasth3'>B2</h3>
+                <h3 className={level === 'B2' ? 'currentLevel' : 'lasth3'}>B2</h3>
             </Link>
         </div>
     )

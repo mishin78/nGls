@@ -57,12 +57,14 @@ nav
     width: 100%
     padding: 1rem 2rem 1rem 2rem
     border: 0.5px solid $grey
+    .burgerMenu
+        display: none
     .logoBox
         @extend %flex
         gap: 0.5rem
         h6
           font-size: 1rem
-          color: #23272F
+          color: #4C4744
           font-weight: 400
     .sectionsBox
         @extend %flex
@@ -72,7 +74,7 @@ nav
             @extend %flex
             h6
                 font-size: 1rem
-                color: #666666
+                color: #4C4744
                 font-weight: 400
             h6:hover
                 color: $black
@@ -227,6 +229,18 @@ main
 
 
 
+.excuses
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    padding: 2rem
+    h1
+        font-size: 2rem
+    img
+        margin-top: 3rem
+        border-radius: 1rem
+
 @media screen and ( max-width: 1325px )
     main
         text-align: center
@@ -234,6 +248,41 @@ main
             grid-template-columns: repeat(3, 250px)
 
     
+@media screen and ( max-width: 1150px )
+    nav
+        position: relative
+        .sectionsBox
+            display: none
+        .burgerSections
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            position: absolute
+            right: 15px
+            top: 50px
+            .section
+                display: flex
+                h6
+                    font-size: 1rem
+                    color: #4C4744
+                    font-weight: 400
+                h6:hover
+                    color: $black
+        .burgerMenu
+            display: flex
+            justify-content: center
+            align-items: center
+            flex-direction: column
+            div
+                width: 40px
+                height: 7px
+                background: #4C4744
+                margin: 3px 0
+            .first
+                margin: 0 0 3px 0
+            .last
+                margin: 3px 0 0 0 
 
 @media screen and ( max-width: 930px )
     main

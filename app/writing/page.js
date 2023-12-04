@@ -1,11 +1,11 @@
 import '../styles.sass'
-
+import { Excuses } from '../components/Excuses'
 
 export default function Writing() {
 
     return (
         <main>
-        <h1>Writing</h1>
+            <Excuses />
         </main>
     )
 }

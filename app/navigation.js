@@ -3,10 +3,12 @@ import './styles.sass'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useSearchParams } from 'next/navigation'
+import { useState } from 'react'
 
 
 export default function Navigation() {
 
+    const [ openMenu, setOpenMenu ] = useState(false)
     const searchParams = useSearchParams()
     const search = searchParams.get('section')
 
@@ -18,8 +20,7 @@ export default function Navigation() {
                     <h6>Nationale Deutschsprachige Schule</h6>
                 </div>
             </Link>
-            <div className='sectionsBox'>
-
+            <div className={openMenu ? 'burgerSections' : 'sectionsBox'}>
             <Link  
                 href={{
                     pathname: '/grammar/A1',
@@ -79,6 +80,11 @@ export default function Navigation() {
                     {search === 'exams' ? <h6 style={{color: '#0070F3'}}>Prüfungen</h6> : <h6>Prüfungen</h6>}
                 </div>
             </Link>
+            </div>
+            <div onClick={() => setOpenMenu(!openMenu)} className='burgerMenu'>
+                <div className='first'></div>
+                <div></div>
+                <div className='last'></div>
             </div>
         </nav>
     )

@@ -1,10 +1,12 @@
 import '../styles.sass'
+import { Excuses } from '../components/Excuses'
+
 
 export default function Listening() {
 
     return (
         <main className='сategory listening'>
-        <h1>Listening</h1>
+            <Excuses />
         </main>
     )
 }
