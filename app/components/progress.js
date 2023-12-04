@@ -9,24 +9,6 @@ export default function ProgressBar({ value, value1, value2, value3, value4, val
         <div className="ProgressBarBox">
             <h4>Fortschritte</h4>
             <div className="progressBox">
-                <div className={value === 't' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
-                <div className={value1 === 'e' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
-                <div className={value2 === 'e' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
-                <div className={value3 === 't' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
-                <div className={value4 === 'en' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
-                <div className={value5 === 'en' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
-                <div className={value6 === 'et' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
-                <div className={value7 === 't' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
-                <div className={value8 === 'en' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
-                <div className={value9 === 'st' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
-                <div className={value10 === 'st' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
-                <div className={value11 === 'en' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
-                <div className={value12 === 'st' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
-                <div className={value13 === 'en' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
-                <div className={value14 === 'e' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
-                <div className={value15 === 'st' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
-                <div className={value16 === 'st' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
-                <div className={value17 === 't' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
                 <div className={value18 === 'en' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
                 <div className={value19 === 'e' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
                 <div className={value20 === 'en' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
@@ -35,6 +17,16 @@ export default function ProgressBar({ value, value1, value2, value3, value4, val
                 <div className={value23 === 'e' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
                 <div className={value24 === 'st' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
                 <div className={value25 === 'e' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
+                <div className={value11 === 'en' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
+                <div className={value38 === 'Wie heißst du' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
+                <div className={value12 === 'Kommen Sie aus Polen' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
+                <div className={value13 === 'en' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
+                <div className={value14 === 'e' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
+                <div className={value15 === 'Lernst du  Deutsch' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
+                <div className={value16 === 'Wo wohnen Sie' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
+                <div className={value17 === 't' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
+                <div className={value39 === 'en' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
+                <div className={value40 === 'Was machst du gern' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
                 <div className={value26 === 'st' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
                 <div className={value27 === 'e' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
                 <div className={value28 === 'st' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
@@ -47,9 +39,17 @@ export default function ProgressBar({ value, value1, value2, value3, value4, val
                 <div className={value35 === 't' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
                 <div className={value36 === 't' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
                 <div className={value37 === 't' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
-                <div className={value38 === 'Wie heißst du' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
-                <div className={value39 === 'en' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
-                <div className={value40 === 'Was machst du gern' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
+                <div className={value === 't' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
+                <div className={value1 === 'e' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
+                <div className={value2 === 'e' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
+                <div className={value3 === 't' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
+                <div className={value4 === 'en' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
+                <div className={value5 === 'en' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
+                <div className={value6 === 'et' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
+                <div className={value7 === 't' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
+                <div className={value8 === 'en' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
+                <div className={value9 === 'st' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
+                <div className={value10 === 'st' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
             </div>
         </div>
     )
