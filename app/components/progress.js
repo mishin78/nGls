@@ -18,14 +18,14 @@ export default function ProgressBar({ value, value1, value2, value3, value4, val
                 <div className={value24 === 'st' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
                 <div className={value25 === 'e' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
                 <div className={value11 === 'en' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
-                <div className={value38 === 'Wie heißst du' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
                 <div className={value12 === 'Kommen Sie aus Polen' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
-                <div className={value13 === 'en' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
                 <div className={value14 === 'e' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
-                <div className={value15 === 'Lernst du  Deutsch' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
                 <div className={value16 === 'Wo wohnen Sie' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
-                <div className={value17 === 't' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
                 <div className={value39 === 'en' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
+                <div className={value38 === 'Wie heißst du' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
+                <div className={value13 === 'en' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
+                <div className={value15 === 'Lernst du  Deutsch' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
+                <div className={value17 === 't' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
                 <div className={value40 === 'Was machst du gern' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
                 <div className={value26 === 'st' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
                 <div className={value27 === 'e' ? "greenbox" : "box"}><Image alt='arrow sign' src='/done.svg' width={30} height={30}/></div>
