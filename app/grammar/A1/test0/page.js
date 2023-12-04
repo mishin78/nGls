@@ -3,6 +3,7 @@ import { useState } from "react"
 import Examples from "@/app/components/examples"
 import ProgressBar from "@/app/components/progress"
 import './style.sass'
+import { ShowAnswer } from "@/app/components/showAnswerButton"
 
 
 export default function Task0() {
@@ -96,23 +97,23 @@ export default function Task0() {
                     </div>
                     <div>
                         <p>2 Wie heiß<input className={value11 === 'en' ? 'right' : 'wrong'} value={value11} onChange={e => setValue11(e.target.value)}/> Sie ? 👩🏼‍🦳</p>
-                        <div><input className={value38 === 'Wie heißst du' ? 'right' : 'wrong'} value={value38} onChange={e => setValue38(e.target.value)}/><p>? 👱🏼‍♀️</p></div>
+                        <div><input className={value38 === 'Wie heißst du' ? 'right' : 'wrong'} value={value38} onChange={e => setValue38(e.target.value)}/><p>? 👱🏼‍♀️</p><ShowAnswer f={setValue38} answer={'Wie heißst du'}/></div>
                     </div>
                     <div>
-                        <div>3 <input className={value12 === 'Kommen Sie aus Polen' ? 'right' : 'wrong'} value={value12} onChange={e => setValue12(e.target.value)}/><p>? 👨🏼‍🦳</p></div>
+                        <div>3 <input style={{width: '260px'}} className={value12 === 'Kommen Sie aus Polen' ? 'right' : 'wrong'} value={value12} onChange={e => setValue12(e.target.value)}/><p>? 👨🏼‍🦳</p><ShowAnswer f={setValue12} answer={'Kommen Sie aus Polen'}/></div>
                         <p>Komm<input className={value13 === 'st' ? 'right' : 'wrong'} value={value13} onChange={e => setValue13(e.target.value)}/> du  aus Polen ? 🧑🏽</p>
                     </div>
                     <div>
                         <p>4 Lern<input className={value14 === 'en' ? 'right' : 'wrong'} value={value14} onChange={e => setValue14(e.target.value)}/> Sie  Deutsch ? 🧓🏽</p>
-                        <div><input className={value15 === 'Lernst du  Deutsch' ? 'right' : 'wrong'} value={value15} onChange={e => setValue15(e.target.value)}/><p>? 🧑🏼‍🦱</p></div>
+                        <div><input className={value15 === 'Lernst du  Deutsch' ? 'right' : 'wrong'} value={value15} onChange={e => setValue15(e.target.value)}/><p>? 🧑🏼‍🦱</p><ShowAnswer f={setValue15} answer={'Lernst du  Deutsch'}/></div>
                     </div>
                     <div>
-                        <div>5 <input className={value16 === 'Wo wohnen Sie' ? 'right' : 'wrong'} value={value16} onChange={e => setValue16(e.target.value)}/><p>? 👵🏻</p></div>
+                        <div>5 <input className={value16 === 'Wo wohnen Sie' ? 'right' : 'wrong'} value={value16} onChange={e => setValue16(e.target.value)}/><p>? 👵🏻</p><ShowAnswer f={setValue16} answer={'Wo wohnen Sie'}/></div>
                         <p>Wo wohn<input className={value17 === 'st' ? 'right' : 'wrong'} value={value17} onChange={e => setValue17(e.target.value)}/> du ? 👧🏻</p>
                     </div>
                     <div>
                         <p>6 Was mach<input className={value39 === 'en' ? 'right' : 'wrong'} value={value39} onChange={e => setValue39(e.target.value)}/> Sie  gern ? 👴🏼</p>
-                        <div><input className={value40 === 'Was machst du gern' ? 'right' : 'wrong'} value={value40} onChange={e => setValue40(e.target.value)}/><p>? 👦🏼</p></div>
+                        <div><input className={value40 === 'Was machst du gern' ? 'right' : 'wrong'} value={value40} onChange={e => setValue40(e.target.value)}/><p>? 👦🏼</p><ShowAnswer f={setValue40} answer={'Was machst du gern'}/></div>
                     </div>
                 </div>
 
